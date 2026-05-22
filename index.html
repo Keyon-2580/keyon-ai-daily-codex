@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Keyong 的 AI 前沿日报：聚合 Agentic 开发、自进化、A2A、架构设计与 Harness 工程相关信号。"
+    />
+    <title>Keyong AI Frontier</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231A1A18'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='18' font-family='Arial,sans-serif' font-weight='700' fill='white'%3EAI%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="Keyong AI Frontier">
+          <span class="brand-mark">日报</span>
+          <span class="brand-name">Keyong 的 AI 日报</span>
+        </a>
+        <label class="search-shell" aria-label="搜索">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+          <input id="global-search" type="search" placeholder="搜索标题、来源、标签..." autocomplete="off" />
+        </label>
+        <div class="topbar-meta">
+          <span id="current-date">2026年5月22日 星期五</span>
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>今日已更新</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-tabs" id="mobile-tabs" aria-label="分类导航"></nav>
+
+    <div class="page-shell" id="top">
+      <aside class="sidebar">
+        <nav class="sidebar-nav" id="sidebar-nav" aria-label="分类导航"></nav>
+        <div class="side-panel">
+          <p class="side-kicker">Keyong Lens</p>
+          <div class="lens-list" id="lens-list"></div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="page-head" aria-labelledby="page-title">
+          <div>
+            <h1 id="page-title">每日 AI 前沿速览</h1>
+            <p id="page-subtitle">2026年5月22日 星期五 · 共 0 条</p>
+          </div>
+          <div class="signal-score" aria-label="今日 Keyong 相关度">
+            <span class="score-value" id="score-value">92</span>
+            <span class="score-label">Keyong 相关度</span>
+          </div>
+        </section>
+
+        <section class="insight-band" aria-labelledby="insight-title">
+          <div class="insight-copy">
+            <div class="section-eyebrow">
+              <span class="spark">✦</span>
+              <span id="insight-title">今日洞见</span>
+              <span class="muted">· by Keyong Lens</span>
+            </div>
+            <div id="editor-note" class="editor-note"></div>
+          </div>
+          <div class="signal-map-wrap" aria-hidden="true">
+            <canvas id="signal-map" width="360" height="240"></canvas>
+          </div>
+        </section>
+
+        <section class="archive-strip" id="archive" aria-labelledby="archive-title">
+          <div class="section-head">
+            <span class="section-icon">▣</span>
+            <h2 id="archive-title">7日 AI 日报</h2>
+            <div class="rule"></div>
+            <span class="pill">最近 7 天</span>
+          </div>
+          <div class="archive-days" id="archive-days"></div>
+          <div class="archive-detail" id="archive-detail"></div>
+        </section>
+
+        <div id="sections"></div>
+      </main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

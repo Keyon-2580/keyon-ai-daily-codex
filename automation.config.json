@@ -1,0 +1,62 @@
+{
+  "brand": {
+    "name": "Keyong 的 AI 日报",
+    "title": "每日 AI 前沿速览"
+  },
+  "retentionDays": 7,
+  "workThemes": [
+    {
+      "id": "agentic-development",
+      "label": "Agentic 开发",
+      "keywords": ["agent", "agentic", "agents", "tool", "function calling", "workflow", "react", "langgraph", "langchain", "orchestration"],
+      "description": "关注 Agent loop、工具调用、任务编排、状态管理和生产化开发方式。"
+    },
+    {
+      "id": "self-evolution",
+      "label": "Agent 自进化",
+      "keywords": ["self-evolving", "self-improve", "feedback", "reflection", "memory", "skill", "eval", "benchmark", "trace", "reinforcement"],
+      "description": "关注从轨迹、评测、反馈、规则和技能沉淀中形成持续改进闭环。"
+    },
+    {
+      "id": "a2a",
+      "label": "A2A / 互操作",
+      "keywords": ["a2a", "mcp", "protocol", "interop", "interoperability", "multi-agent", "handoff", "capability discovery", "task state"],
+      "description": "关注 Agent 之间的协议、能力发现、任务状态、artifact 传递和互操作标准。"
+    },
+    {
+      "id": "architecture",
+      "label": "Agentic 架构",
+      "keywords": ["architecture", "runtime", "infrastructure", "framework", "sdk", "sandbox", "state", "observability", "governance"],
+      "description": "关注运行时、权限、状态、上下文、可观测、治理和可扩展架构。"
+    },
+    {
+      "id": "harness",
+      "label": "Harness 工程",
+      "keywords": ["harness", "testing", "test", "ci", "browser", "terminal", "workspace", "replay", "regression", "grader"],
+      "description": "关注让 Agent 长时、可靠、可验证运行的外部工程系统。"
+    }
+  ],
+  "categories": [
+    { "id": "hot", "label": "全球热榜", "icon": "▲" },
+    { "id": "keyong", "label": "Keyong关联", "icon": "→" },
+    { "id": "opensource", "label": "开源热项", "icon": "◎" },
+    { "id": "voices", "label": "大佬说", "icon": "◆" },
+    { "id": "industry", "label": "行业动态", "icon": "○" },
+    { "id": "research", "label": "前沿研究", "icon": "◇" },
+    { "id": "china", "label": "国内速递", "icon": "◉" },
+    { "id": "archive", "label": "7日AI日报", "icon": "▣" }
+  ],
+  "sourceQueries": [
+    "AI agents agentic AI A2A MCP protocol",
+    "LLM agents benchmark evaluation trace harness",
+    "self evolving agents autonomous agents workflow",
+    "agentic coding harness sandbox Codex Claude Code",
+    "multi-agent interoperability agent protocol"
+  ],
+  "rssSources": [
+    { "name": "OpenAI News", "url": "https://openai.com/news/rss.xml" },
+    { "name": "Anthropic News", "url": "https://www.anthropic.com/news/rss.xml" },
+    { "name": "Google Developers Blog", "url": "https://developers.googleblog.com/en/search/?feed=rss" },
+    { "name": "LangChain Blog", "url": "https://blog.langchain.com/rss/" }
+  ]
+}
