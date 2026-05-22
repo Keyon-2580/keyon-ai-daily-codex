@@ -16,7 +16,7 @@ GitHub 发布仓库：
 https://github.com/Keyon-2580/keyon-ai-daily-codex.git
 ```
 
-注意：发布步骤要求 `keyong-ai-frontier` 目录所在 Git 仓库已经配置 GitHub remote 和发布分支。若未配置，定时任务会生成本地内容并报告缺少的 remote/branch 信息，不会猜测推送目标。
+发布方式：仓库使用 `gh-pages` 分支发布静态站。每日任务需要先推 `main`，再推 `main:gh-pages`。
 
 ## 推荐日更命令
 
@@ -64,7 +64,8 @@ node scripts/collect-news.mjs --out tmp/latest-candidates.json
 9. 若校验通过且 GitHub remote/发布分支已配置，提交并推送：
    git add data.js
    git commit -m "Update AI frontier daily digest YYYY-MM-DD"
-   git push
+   git push origin main
+   git push origin main:gh-pages
 10. 若 remote 或发布分支未配置，保留本地文件并报告缺失信息。
 ```
 
