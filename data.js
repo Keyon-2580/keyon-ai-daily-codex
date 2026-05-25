@@ -1,30 +1,32 @@
 window.APP_DATA = {
-  "generatedAt": "2026-05-22T07:05:23.096Z",
-  "sourceDigestDate": "2026-05-22",
-  "dateText": "2026年5月22日 星期五",
+  "generatedAt": "2026-05-25T02:36:28Z",
+  "sourceDigestDate": "2026-05-25",
+  "dateText": "2026年5月25日 星期一",
   "editorNote": [
-    "今天有两件事值得真正停下来想。 第一，<a href=\"https://www.qbitai.com/2026/05/422032.html\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAI 非数学模型破解 80 年数学难题</a>——125 页推演、连菲尔兹奖得主都意外。这件事的真正张力不在于\"AI 有多强\"，而在于它把一个悬而未决的问题重新摆上桌：<strong>LLM 的边界到底在哪，没有人知道</strong>。比能力更值得警惕的是我们的预测模型本身已经失效了。 第二，<a href=\"https://github.com/langchain-ai/langchain\" target=\"_blank\" rel=\"noopener noreferrer\">LangChain</a> 持续飙升 + <a href=\"https://arxiv.org/abs/2605.20530\" target=\"_blank\" rel=\"noopener noreferrer\">AgentAtlas 试图统一评测碎片化</a>，这两件事放在一起读才有意思：<strong>Agent 的工程化和可评测性正在同步爆发，而两者都还没有事实标准</strong>。这对 a2a 协议来说既是机会窗口，也是时钟压力——<a href=\"https://tldr.tech/ai/2026-05-21\" target=\"_blank\" rel=\"noopener noreferrer\">Anthropic、OpenAI、Google 三方都在加速下注 Agent 生态</a>，谁先把互操作规范立住，谁就在这场「基础设施战争」里拿到裁判席。 a2a 现在要想的不是\"做不做\"，是\"够不够快\"。"
+    "今天的主线非常清楚：Agent 不再是一个模型能力展示词，而是在变成一套可部署、可治理、可评测的工程系统。<a href=\"https://openai.com/index/introducing-gpt-5-5/\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAI GPT-5.5</a> 把 agentic coding、computer use 和跨工具长任务放到同一个能力框架里；<a href=\"https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud\" target=\"_blank\" rel=\"noopener noreferrer\">Google I/O 26</a> 则把 Antigravity 2.0、Managed Agents API 和 Gemini Enterprise Agent Platform 串成从本地开发到云端部署的链路。模型强只是入场券，真正的竞争点正在转向 harness、状态、权限、回放和组织级治理。",
+    "论文侧也在补关键短板：<a href=\"https://arxiv.org/abs/2605.20425\" target=\"_blank\" rel=\"noopener noreferrer\">AgentCo-op</a> 用 typed artifact handoff 合成多 Agent 科研工作流，<a href=\"https://arxiv.org/abs/2605.20530\" target=\"_blank\" rel=\"noopener noreferrer\">AgentAtlas</a> 试图把 Agent 评测从单一成功率拉回轨迹、控制决策和失败归因。再叠加 <a href=\"https://arxiv.org/abs/2605.18421\" target=\"_blank\" rel=\"noopener noreferrer\">EvoMemBench</a> 与自进化遗忘问题，今天更像是一个信号：下一阶段的 Agent 工程，不是拼更大的 prompt，而是拼更可靠的闭环。",
+    "国内同样在向 Agent 原生基础设施靠拢。<a href=\"https://platform.qianwenai.com/skills\" target=\"_blank\" rel=\"noopener noreferrer\">QianWen AI Skills</a> 和 <a href=\"https://skills.aliyun.com/\" target=\"_blank\" rel=\"noopener noreferrer\">阿里云 Agent Skills 门户</a> 把模型调用、认证、用量和云资源操作变成 Agent 可安装的技能；百度 Create 2026 提出 DAA（日活智能体数）这个新指标，说明平台开始用“有多少 Agent 真正在交付任务”来衡量生态活力。Keyong Lens 今天最值得盯的三件事：Harness 工程、A2A/互操作、自进化评测。"
   ],
   "lens": [
     {
       "label": "Agentic 开发",
-      "value": 97
+      "value": 92
     },
     {
       "label": "Agent 自进化",
-      "value": 77
+      "value": 88
     },
     {
       "label": "A2A / 互操作",
-      "value": 72
+      "value": 94
     },
     {
       "label": "Agentic 架构",
-      "value": 77
+      "value": 90
     },
     {
       "label": "Harness 工程",
-      "value": 77
+      "value": 96
     }
   ],
   "categories": [
@@ -70,6 +72,29 @@ window.APP_DATA = {
     }
   ],
   "archives": [
+    {
+      "date": "05.25",
+      "fullDate": "2026-05-25",
+      "theme": "Agent 进入工程系统战",
+      "take": "今天最强信号来自三条线：模型开始原生长任务，平台补齐 harness 与治理，论文把互操作、评测和自进化闭环推到前台。",
+      "items": [
+        {
+          "title": "GPT-5.5 把 agentic coding、computer use 和跨工具任务放到同一能力框架",
+          "source": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-5-5/"
+        },
+        {
+          "title": "Google I/O 26 推出 Antigravity 2.0 与 Managed Agents API",
+          "source": "Google Cloud",
+          "url": "https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud"
+        },
+        {
+          "title": "AgentCo-op 与 AgentAtlas 同时把多 Agent 互操作和轨迹评测推向标准化",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2605.20425"
+        }
+      ]
+    },
     {
       "date": "05.22",
       "fullDate": "2026-05-22",
@@ -207,864 +232,790 @@ window.APP_DATA = {
           "url": "https://www.anthropic.com/engineering/building-effective-agents"
         }
       ]
-    },
-    {
-      "date": "05.16",
-      "fullDate": "2026-05-16",
-      "theme": "Harness 决定可靠性",
-      "take": "Agent 能力上限由模型决定，能否稳定落地则取决于测试、沙箱、权限、回放和恢复机制。",
-      "items": [
-        {
-          "title": "Harness Engineering",
-          "source": "OpenAI",
-          "url": "https://openai.com/index/harness-engineering/"
-        },
-        {
-          "title": "Effective harnesses",
-          "source": "Anthropic",
-          "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
-        },
-        {
-          "title": "Codex harness",
-          "source": "OpenAI",
-          "url": "https://openai.com/index/unlocking-the-codex-harness/"
-        }
-      ]
     }
   ],
   "items": [
     {
-      "id": "keyong-1779417952280-12",
+      "id": "keyong-20260525-01",
       "section": "keyong",
-      "title": "AgentCo-op：在混沌中「自组织」多 Agent 工作流",
-      "summary": "开放式科研任务中，缺乏标准接口和可靠评估指标，多 Agent 协作极其困难。AgentCo-op 用检索增强合成的思路，从现有技能库、工具库和外部 Agent 中组合出可复用的工作流。相当于为 Agent 生态提供了一套「乐高拼装」系统，无需预先定义整套编排逻辑。",
-      "insight": "→ Keyong 关联：这条消息和「Agentic 开发」高度相关。直接对标 a2a 协议的应用场景——多 Agent 互操作、工作流自动组合。检索合成方法可作为动态发现和调用异构 Agent 的参考方案。",
+      "title": "GPT-5.5：Agent 能力从「会写」进入「会持续做事」阶段",
+      "summary": "OpenAI 发布 GPT-5.5，强调在 coding、research、data analysis、computer use 和跨工具长任务上更强。它在 Terminal-Bench 2.0、OSWorld-Verified、BrowseComp 等任务上给出显著提升，说明模型正在更适配真实工作流，而不是只优化单轮回答。",
+      "insight": "→ Keyong 关联：这条消息和「Agentic 开发」高度相关。Agent 能力的竞争点从函数调用转向跨工具、跨上下文、可持续执行；A2A 与 harness 设计要假设模型会主动计划、检查和恢复。",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "source": "OpenAI",
+      "tags": [
+        "GPT-5.5",
+        "agentic-coding",
+        "computer-use"
+      ],
+      "label": "Keyong",
+      "kind": "keyong",
+      "importance": 10
+    },
+    {
+      "id": "keyong-20260525-02",
+      "section": "keyong",
+      "title": "Agents SDK 补上 model-native harness 与 native sandbox",
+      "summary": "OpenAI 更新 Agents SDK，加入面向模型的 harness 和原生 sandbox execution，让开发者可以更标准地构建跨文件、跨工具、长时间运行的安全 Agent。重点不是多一个 SDK，而是把运行环境、工具边界和安全执行变成一等公民。",
+      "insight": "→ Keyong 关联：这条消息和「Harness 工程」高度相关。Agent 的可靠性越来越取决于沙箱、权限、文件系统、回放和失败隔离；协议层要暴露足够多的运行状态，而不是只传最终答案。",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "source": "OpenAI",
+      "tags": [
+        "Agents SDK",
+        "sandbox",
+        "harness"
+      ],
+      "label": "Keyong",
+      "kind": "keyong",
+      "importance": 9
+    },
+    {
+      "id": "keyong-20260525-03",
+      "section": "keyong",
+      "title": "Google I/O 26：Antigravity 2.0 + Managed Agents API 打通本地到云端",
+      "summary": "Google Cloud 在 I/O 26 介绍 Antigravity 2.0 与 Managed Agents API，把本地 Agent 开发、云端托管、协议层和 Gemini Enterprise Agent Platform 放到同一叙事中。它释放的信号是：Agent 平台要同时服务开发者体验和企业部署治理。",
+      "insight": "→ Keyong 关联：这条消息和「Agentic 架构」高度相关。A2A/ADK/Agent Platform 组合正在形成从开发、测试、部署到治理的纵向栈；互操作协议必须兼顾本地工具链和企业级运行时。",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud",
+      "source": "Google Cloud",
+      "tags": [
+        "Antigravity",
+        "Managed Agents",
+        "ADK"
+      ],
+      "label": "Keyong",
+      "kind": "keyong",
+      "importance": 9
+    },
+    {
+      "id": "keyong-20260525-04",
+      "section": "keyong",
+      "title": "LangSmith Engine：从观测 Agent 到自动提出修复建议",
+      "summary": "LangChain 在 5 月集中推出 LangSmith Engine、Context Hub、Sandboxes GA 和 Managed Deep Agents。LangSmith Engine 的关键变化，是把 trace 中的问题检测和修复建议推到开发闭环里，甚至可以生成 PR。",
+      "insight": "→ Keyong 关联：这条消息和「Agent 自进化」高度相关。自进化不是让 Agent 随便改自己，而是从 trace 发现问题、提出补丁、跑回归、再进入人工审核；这正是可控自进化的工程路径。",
+      "url": "https://blog.langchain.com/introducing-langsmith-engine/",
+      "source": "LangChain Blog",
+      "tags": [
+        "LangSmith",
+        "trace",
+        "self-improvement"
+      ],
+      "label": "Keyong",
+      "kind": "keyong",
+      "importance": 8
+    },
+    {
+      "id": "keyong-20260525-05",
+      "section": "keyong",
+      "title": "AgentCo-op：typed artifact handoff 成为多 Agent 协作关键接口",
+      "summary": "AgentCo-op 提出 retrieval-based synthesis，用可复用 skills、tools 和 external agents 组合科研工作流，并通过 typed artifact handoffs 连接组件。在两个开放式基因组学案例中，它试图避免全局拓扑搜索，用局部修复降低复杂度。",
+      "insight": "→ Keyong 关联：这条消息和「A2A / 互操作」高度相关。多 Agent 协作的难点不是发消息，而是 artifact 类型、能力发现、失败定位和局部修复；这给 A2A 任务状态与交付物协议很直接的参考。",
       "url": "https://arxiv.org/abs/2605.20425",
-      "source": "ArXiv CS.AI",
+      "source": "arXiv",
       "tags": [
         "multi-agent",
-        "workflow-synthesis",
-        "retrieval-augmented"
+        "artifact-handoff",
+        "workflow-synthesis"
       ],
       "label": "Keyong",
       "kind": "keyong",
-      "importance": 7
+      "importance": 9
     },
     {
-      "id": "keyong-1779417964772-16",
+      "id": "keyong-20260525-06",
       "section": "keyong",
-      "title": "Agent 评测碎片化问题终于有人梳理了——AgentAtlas 能统一这个乱局吗？",
-      "summary": "ArXiv 最新研究指出 LLM Agent 评测面临严重碎片化问题：不同 benchmark 各自衡量最终成功率、工具调用有效性、重复通过一致性、轨迹安全性或攻击鲁棒性。AgentAtlas 试图建立跨维度的统一评估框架。这对 Agent 产品化部署具有重要参考价值，是该领域亟需的标准化尝试。",
-      "insight": "→ Keyong 关联：这条消息和「Agentic 开发」高度相关。A2A 协议制定中，多 Agent 交互的评估标准化是关键；AgentAtlas 的多维度框架对设计互操作性指标有直接借鉴意义",
+      "title": "AgentAtlas：Agent 评测从排行榜走向轨迹诊断",
+      "summary": "AgentAtlas 试图突破只看最终成功率的评测方式，引入控制决策、轨迹失败归因和 taxonomy-aware 分析。它把 Agent 的错误拆到 Act、Ask、Refuse、Stop、Confirm、Recover 等动作层，适合分析真实部署里的中间失败。",
+      "insight": "→ Keyong 关联：这条消息和「Harness 工程」高度相关。一个可运营 Agent 平台需要知道失败发生在哪里、为什么影响结果、是否可恢复；评测 taxonomy 可以直接映射到 trace schema 和回放面板。",
       "url": "https://arxiv.org/abs/2605.20530",
-      "source": "ArXiv CS.AI",
+      "source": "arXiv",
       "tags": [
         "agent-evaluation",
-        "benchmark-fragmentation",
-        "standardization"
-      ],
-      "label": "Keyong",
-      "kind": "keyong",
-      "importance": 8
-    },
-    {
-      "id": "keyong-1779417909612-5",
-      "section": "keyong",
-      "title": "LangChain 还在趋势榜上飙升——Agent 工程平台的「基础设施战争」开始了",
-      "summary": "LangChain 日增 106 stars，稳居 GitHub Trending 榜首，13.7 万 stars 的体量已成 Agent 开发事实标准。这反映出整个行业在 Agent 工程化、可靠性、可观测性上的迫切需求——从玩具项目到生产系统的鸿沟，正被 LangChain 这类框架逐步填平。基础设施之争往往比模型之争更决定长期格局。",
-      "insight": "→ Keyong 关联：这条消息和「Agentic 开发」高度相关。LangChain 作为 Agent 工程层的事实标准，直接影响 a2a 协议的实装难度与生态友好性；团队需关注其多 Agent 协调、工具调用、状态管理等特性与 a2a 协议设计的耦合度",
-      "url": "https://github.com/langchain-ai/langchain",
-      "source": "GitHub Trending",
-      "tags": [
-        "agent-framework",
-        "llm-orchestration",
-        "engineering-platform"
-      ],
-      "label": "Keyong",
-      "kind": "keyong",
-      "importance": 8
-    },
-    {
-      "id": "keyong-1779417894549-2",
-      "section": "keyong",
-      "title": "Transformers 库仍是多模态 AI 的「乐高积木」——160K Stars 意味着什么",
-      "summary": "HuggingFace Transformers 以 16 万 Stars 独占鳌头，涵盖文本、视觉、音频及多模态模型的统一框架。持续的社区贡献反映出它已成为 AI 工程化的工业标准，模型定义、推理、训练的全链路集成。",
-      "insight": "→ Keyong 关联：这条消息和「Agentic 架构」高度相关。a2a 协议设计需要与 Transformers 生态深度兼容，统一的模型接口定义是 Agent 互联的基础层。",
-      "url": "https://github.com/huggingface/transformers",
-      "source": "GitHub Trending",
-      "tags": [
-        "transformers",
-        "multimodal",
-        "model-inference"
+        "trajectory",
+        "taxonomy"
       ],
       "label": "Keyong",
       "kind": "keyong",
       "importance": 9
     },
     {
-      "id": "keyong-1779417952280-10",
+      "id": "keyong-20260525-07",
       "section": "keyong",
-      "title": "COSMO-Agent：用强化学习「打通」CAD-CAE 的语义鸿沟",
-      "summary": "工业设计中的迭代优化长期卡在 CAD 和 CAE 之间的语义转换问题。COSMO-Agent 通过工具增强的强化学习框架，让 Agent 能够在复杂约束下将仿真反馈直接转化为有效的几何编辑，闭环完成设计优化。这是 Agent 在工程领域的一个精细化应用尝试。",
-      "insight": "→ Keyong 关联：这条消息和「Agentic 开发」高度相关。展示 Agent 跨域工具调用的实践案例，CAD/CAE 的协议互联需求与 a2a 通信机制类似，可参考其约束下的多工具编排方案。",
-      "url": "https://arxiv.org/abs/2605.20190",
-      "source": "ArXiv CS.AI",
+      "title": "EvoMemBench：Agent 记忆评测开始关注自进化维度",
+      "summary": "EvoMemBench 从 self-evolving perspective 评测 Agent memory，把 in-episode / cross-episode 与 knowledge / execution 两组维度组合起来。它补上了一个现实痛点：Agent 在长期任务中不仅要记住事实，还要把执行经验变成可用记忆。",
+      "insight": "→ Keyong 关联：这条消息和「Agent 自进化」高度相关。记忆系统要同时服务任务内恢复和跨任务沉淀；否则技能、规则和经验容易变成不可审计的 prompt 噪音。",
+      "url": "https://arxiv.org/abs/2605.18421",
+      "source": "arXiv",
       "tags": [
-        "tool-augmented-agent",
-        "RL",
-        "CAD-CAE"
+        "memory",
+        "self-evolving",
+        "benchmark"
       ],
       "label": "Keyong",
       "kind": "keyong",
-      "importance": 6
+      "importance": 8
     },
     {
-      "id": "keyong-1779417964772-15",
+      "id": "keyong-20260525-08",
       "section": "keyong",
-      "title": "「精准标准」的陷阱：Benchmark 如何同时高估和低估 AI 能力？",
-      "summary": "ArXiv 新论文指出，基准测试虽然追踪 AI 进展的标配，但因为倾向可精确定义、自动评分、易于优化的任务，导致对部署能力的评估失真。论文呼吁采用开放世界评估作为补充，更真实地衡量前沿 AI 的实际表现。这是对当前 AI 评测方法论的根本性反思。",
-      "insight": "→ Keyong 关联：这条消息可放入「Agent 自进化」视角观察，关注从轨迹、评测、反馈、规则和技能沉淀中形成持续改进闭环。",
-      "url": "https://arxiv.org/abs/2605.20520",
-      "source": "ArXiv CS.AI",
+      "title": "QianWen AI Skills：国内模型服务开始按 Agent 可安装能力重构",
+      "summary": "QianWen AI Skills 将文本、图像、视频、语音、视觉、模型选择、认证和用量查询封装为 Agent 可安装技能；阿里云 Agent Skills 门户也把云资源操作、诊断和合规流程包装成可被 Codex、Claude Code、Qwen Code 等工具调用的 Skill。",
+      "insight": "→ Keyong 关联：这条消息和「Agentic 架构」高度相关。模型平台正在从人读文档、人写 SDK，转向 Agent 安装 Skill、动态选模型、自动处理认证和账单；这会改变工具发现与权限治理设计。",
+      "url": "https://platform.qianwenai.com/skills",
+      "source": "QianWen AI",
+      "tags": [
+        "Agent Skills",
+        "Qwen",
+        "tooling"
+      ],
+      "label": "Keyong",
+      "kind": "keyong",
+      "importance": 8
+    },
+    {
+      "id": "opensource-20260525-01",
+      "section": "opensource",
+      "title": "A2A Protocol：Agent 互操作的开源标准继续成为底层锚点",
+      "summary": "A2A 是 Linux Foundation 下的开源 Agent2Agent 协议项目，目标是让不同 agentic applications 之间能安全通信、协作和交换任务状态。随着 Google、云厂商和开发工具都在围绕协议层布局，A2A 正从概念变成实现约束。",
+      "insight": "→ 互操作的胜负点在 task state、artifact、capability discovery 和权限边界，而不是单纯消息格式。",
+      "url": "https://github.com/a2aproject/A2A",
+      "source": "GitHub",
+      "tags": [
+        "A2A",
+        "protocol",
+        "interoperability"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 10
+    },
+    {
+      "id": "opensource-20260525-02",
+      "section": "opensource",
+      "title": "Deep Agents：LangChain 的 batteries-included agent harness 升温",
+      "summary": "langchain-ai/deepagents 是建立在 LangGraph 之上的通用 Agent harness，强调 planning、delegation、filesystem、human-in-the-loop 和 durable execution。近期 PyPI 版本与文档更新显示它正在变成 LangChain 体系里更完整的 Agent 产品化入口。",
+      "insight": "→ Deep Agents 把 runtime 和 harness 打包，说明社区需求正在从“调用工具”升级为“可持续跑任务”。",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "source": "GitHub",
+      "tags": [
+        "LangChain",
+        "LangGraph",
+        "harness"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 9
+    },
+    {
+      "id": "opensource-20260525-03",
+      "section": "opensource",
+      "title": "Emdash：并行编码 Agent 的桌面编排层",
+      "summary": "generalaction/emdash 是开源 Agentic Development Environment，可在独立 git worktree 中并行运行多个 coding agents，支持 Claude Code、Codex、OpenCode、Gemini、Amp 等 CLI。候选池中该仓库 stars 已达 4.6K 级别，是今天最强开源信号之一。",
+      "insight": "→ 多 Agent 编程需要 worktree 隔离、diff review、CI 状态和合并控制；这类 ADE 会成为 agentic development 的日常入口。",
+      "url": "https://github.com/generalaction/emdash",
+      "source": "GitHub",
+      "tags": [
+        "ADE",
+        "coding-agents",
+        "worktree"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 8
+    },
+    {
+      "id": "opensource-20260525-04",
+      "section": "opensource",
+      "title": "WildClawBench：把 Agent 放进真实 OpenClaw 环境里考试",
+      "summary": "InternLM/WildClawBench 提供 60 个真实长程任务，覆盖命令行、网页、邮件、隐私泄漏检查和多模态处理等场景。它强调在真实 runtime 中评测，而不是只跑短程合成 sandbox。",
+      "insight": "→ 这类 benchmark 会推动 harness 标准化：任务定义、Docker 镜像、评分脚本和 trace 产物要能被复现。",
+      "url": "https://github.com/InternLM/WildClawBench/",
+      "source": "GitHub",
       "tags": [
         "benchmark",
-        "evaluation",
-        "methodology"
-      ],
-      "label": "Keyong",
-      "kind": "keyong",
-      "importance": 7
-    },
-    {
-      "id": "keyong-1779417952280-11",
-      "section": "keyong",
-      "title": "OSCToM：用对抗生成「教」大模型复杂社交推理",
-      "summary": "当前 LLM 在简单 ToM 任务上表现不错，但在涉及递归信念和信息不对称的复杂社交场景中仍显得无力。OSCToM 通过强化学习引导的对抗性样本生成，构建更难的 ToM 评测基准，迫使模型学习更深层的因果推理能力。这对 Agent 的多步决策和人-Agent 交互设计有启示。",
-      "insight": "→ Keyong 关联：这条消息可放入「Harness 工程」视角观察，关注让 Agent 长时、可靠、可验证运行的外部工程系统。",
-      "url": "https://arxiv.org/abs/2605.20423",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "theory-of-mind",
-        "adversarial-generation",
-        "LLM"
-      ],
-      "label": "Keyong",
-      "kind": "keyong",
-      "importance": 5
-    },
-    {
-      "id": "keyong-1779417994218-30",
-      "section": "keyong",
-      "title": "Manus「技术切割」困局：10亿美金回购，却被Meta底层系统死死绑定",
-      "summary": "Manus创始人计划融资10亿美元回购公司，估值不低于Meta收购时的20亿美元，并谋求在中国重新落地后赴港上市。但核心障碍是技术剥离——Manus的Agentic AI技术已深度融入Meta底层系统，如何「切割」至今无明确方案，三位创始人最终也可能放弃。这反映出AI公司被收购后的深层困境。",
-      "insight": "→ Keyong 关联：这条消息和「Agentic 开发」高度相关。Manus的Agentic AI技术与Meta系统深度耦合问题，直接关联A2A协议标准化的必要性。若AI系统高度定制化绑定，难以互联互通，正说明开放协议的战略价值。",
-      "url": "https://36kr.com/p/3819709302329735?f=rss",
-      "source": "36氪",
-      "tags": [
-        "Agentic AI",
-        "并购风险",
-        "技术耦合"
-      ],
-      "label": "Keyong",
-      "kind": "keyong",
-      "importance": 7
-    },
-    {
-      "id": "opensource-1779417894549-0",
-      "section": "opensource",
-      "title": "Whisper 还在趋势榜？10万 Stars 的语音模型为什么没被遗忘",
-      "summary": "OpenAI Whisper 作为开源语音识别标杆，凭借大规模弱监督学习方案实现鲁棒性识别，已积累10万+ Stars。该项目持续保持热度，反映出语音理解仍是 AI 基础设施的刚需，尤其在多模态 Agent 时代，语音输入成为必备交互层。",
-      "insight": "→ Agent 互联需要统一的语音输入层；Whisper 作为事实标准，支撑 a2a 协议中的语音交互边界定义。",
-      "url": "https://github.com/openai/whisper",
-      "source": "GitHub Trending",
-      "tags": [
-        "speech-recognition",
-        "multimodal",
-        "weak-supervision"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 7
-    },
-    {
-      "id": "opensource-1779417894549-1",
-      "section": "opensource",
-      "title": "containerd：被遗忘的容器王者，DevOps 地基依然坚固",
-      "summary": "containerd 作为开放可靠的容器运行时，已稳定运行 20K+ Stars 级别的基础设施。虽然增长缓和，但其作为 Docker/K8s 底层依赖的地位未变，是 AI 应用生产化部署的核心。",
-      "insight": "",
-      "url": "https://github.com/containerd/containerd",
-      "source": "GitHub Trending",
-      "tags": [
-        "container-runtime",
-        "infrastructure",
-        "DevOps"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 5
-    },
-    {
-      "id": "opensource-1779417894549-2",
-      "section": "opensource",
-      "title": "Transformers 库仍是多模态 AI 的「乐高积木」——160K Stars 意味着什么",
-      "summary": "HuggingFace Transformers 以 16 万 Stars 独占鳌头，涵盖文本、视觉、音频及多模态模型的统一框架。持续的社区贡献反映出它已成为 AI 工程化的工业标准，模型定义、推理、训练的全链路集成。",
-      "insight": "→ a2a 协议设计需要与 Transformers 生态深度兼容，统一的模型接口定义是 Agent 互联的基础层。",
-      "url": "https://github.com/huggingface/transformers",
-      "source": "GitHub Trending",
-      "tags": [
-        "transformers",
-        "multimodal",
-        "model-inference"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 9
-    },
-    {
-      "id": "opensource-1779417894549-3",
-      "section": "opensource",
-      "title": "Docker Compose：被遗忘的编排小王子，但 Agent 时代它可能死灰复燃",
-      "summary": "Docker Compose 凭借声明式多容器编排方案，累积 37K Stars。虽增速缓慢，但在 Agent 本地开发和轻量级多服务编排中仍有一席之地，尤其是 Agent-to-Agent 服务调用的实验环境搭建。",
-      "insight": "→ a2a 本地测试环境常用 Compose 快速拉起多个 Agent 服务；但标准化编排定义需要超越传统容器概念。",
-      "url": "https://github.com/docker/compose",
-      "source": "GitHub Trending",
-      "tags": [
-        "container-orchestration",
-        "development-environment",
-        "devops"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 4
-    },
-    {
-      "id": "opensource-1779417894549-4",
-      "section": "opensource",
-      "title": "微软 Presidio：PII 防护成为 AI 应用的「隐形成本」",
-      "summary": "微软开源的数据匿名化框架 Presidio，近期 Stars 增速 43/天，支持文本、图像和结构化数据的敏感信息检测与脱敏。反映出隐私合规正从合法义务演变为 AI 应用的核心竞争力，尤其在 Agent 处理真实数据时不可绕过。",
-      "insight": "→ Agent 跨域互联时涉及数据流动；Presidio 可作为 a2a 协议中的隐私层标准组件，确保数据安全流通。",
-      "url": "https://github.com/microsoft/presidio",
-      "source": "GitHub Trending",
-      "tags": [
-        "PII-detection",
-        "data-privacy",
-        "anonymization"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 6
-    },
-    {
-      "id": "opensource-1779417909612-5",
-      "section": "opensource",
-      "title": "LangChain 还在趋势榜上飙升——Agent 工程平台的「基础设施战争」开始了",
-      "summary": "LangChain 日增 106 stars，稳居 GitHub Trending 榜首，13.7 万 stars 的体量已成 Agent 开发事实标准。这反映出整个行业在 Agent 工程化、可靠性、可观测性上的迫切需求——从玩具项目到生产系统的鸿沟，正被 LangChain 这类框架逐步填平。基础设施之争往往比模型之争更决定长期格局。",
-      "insight": "→ LangChain 作为 Agent 工程层的事实标准，直接影响 a2a 协议的实装难度与生态友好性；团队需关注其多 Agent 协调、工具调用、状态管理等特性与 a2a 协议设计的耦合度",
-      "url": "https://github.com/langchain-ai/langchain",
-      "source": "GitHub Trending",
-      "tags": [
-        "agent-framework",
-        "llm-orchestration",
-        "engineering-platform"
+        "OpenClaw",
+        "long-horizon"
       ],
       "label": "开源",
       "kind": "open",
       "importance": 8
     },
     {
-      "id": "opensource-1779417909612-6",
+      "id": "opensource-20260525-05",
       "section": "opensource",
-      "title": "Trivy 日增 30 stars 稳步增长——DevSecOps 的「肌肉记忆」正在形成",
-      "summary": "Aqua Security 的 Trivy（35K+ stars）在容器、K8s、代码库、云环境中的漏洞扫描已成标准工具链。日增虽温和但持续，反映出企业级 AI 基础设施安全审计的常态化需求。这是一条对标题新闻不起眼、但对大厂 AI 研发成本结构影响深远的幕后线索。",
-      "insight": "",
-      "url": "https://github.com/aquasecurity/trivy",
-      "source": "GitHub Trending",
+      "title": "QianWen AI Skills 开源：模型能力变成可安装技能目录",
+      "summary": "QianWen-AI/qianwen-ai 的 skills 目录开放了音频、图像、文本、视频、视觉、模型选择、认证和用量查询等技能。它不是传统 SDK，而是直接面向 Agent 客户端的能力包。",
+      "insight": "→ Skill 目录格式正在变成 Agent 工程的新分发单位；协议需要能描述能力、权限、成本和失败处理。",
+      "url": "https://github.com/QianWen-AI/qianwen-ai/tree/main/skills",
+      "source": "GitHub",
       "tags": [
-        "devops",
-        "security",
-        "vulnerability-scanning"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 5
-    },
-    {
-      "id": "opensource-1779417909612-7",
-      "section": "opensource",
-      "title": "JAX 还在增长——数值计算框架的「隐形冠军」正吞掉 PyTorch 的一块蛋糕",
-      "summary": "JAX（35.6K stars）日增 17，虽然增幅不如 LangChain，但其在自动微分、向量化、JIT 编译的优雅设计正在吸引大量 research team 和算法工程师。与 PyTorch 的竞争不在明面，而在于科研效率和硬件利用率——这决定了下一代大模型训练的成本上限。",
-      "insight": "",
-      "url": "https://github.com/jax-ml/jax",
-      "source": "GitHub Trending",
-      "tags": [
-        "numerical-computing",
-        "jit-compilation",
-        "autodiff"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 6
-    },
-    {
-      "id": "opensource-1779417909612-8",
-      "section": "opensource",
-      "title": "Lance：「Parquet 的接班人」要用 100 倍加速重新定义 AI 数据湖",
-      "summary": "Lance Format（6.4K stars，+27 today）宣称用 2 行代码从 Parquet 转换、实现 100 倍随机访问加速、内置向量索引和数据版本控制。这是向量数据库、多模态 AI、数据湖的一次深刻碰撞——如果成熟度达到，会直接冲击现有 OLAP 引擎和向量 DB 的市场格局。",
-      "insight": "→ Lance 的向量索引与多模态支持直接影响 geo 内容索引和 AI 搜索引擎对大规模多模态内容的处理效率；可评估其作为 geo 数据后端替代方案的可行性",
-      "url": "https://github.com/lance-format/lance",
-      "source": "GitHub Trending",
-      "tags": [
-        "data-lakehouse",
-        "vector-index",
-        "multimodal"
+        "skills",
+        "Qwen",
+        "model-routing"
       ],
       "label": "开源",
       "kind": "open",
       "importance": 7
     },
     {
-      "id": "opensource-1779417909612-9",
+      "id": "opensource-20260525-06",
       "section": "opensource",
-      "title": "K9s：Kubernetes CLI 的「瑞士军刀」还在默默增长——没人讨论它，但人人都在用",
-      "summary": "K9s（33.7K stars，+14 today）是 Kubernetes 集群管理的社区宠儿，日增虽温和但用户基盘广大。对 AI 研发团队而言，这意味着云原生 Agent 基础设施的运维成本正在被大幅压低——DevOps 内卷越剧烈，Agent 的部署就越容易民主化。",
-      "insight": "",
-      "url": "https://github.com/derailed/k9s",
-      "source": "GitHub Trending",
+      "title": "Stargazer：面向天体物理约束的 Agent benchmark",
+      "summary": "AIPS-UofT/Stargazer 是一个可扩展的模型拟合 benchmark environment，用于测试 AI Agents 在天体物理约束下的任务能力。它说明 Agent 评测正在向领域化、强约束和科学任务迁移。",
+      "insight": "→ 垂直领域 benchmark 会倒逼 Agent 输出可解释中间产物，而不仅是自然语言结论。",
+      "url": "https://github.com/AIPS-UofT/Stargazer",
+      "source": "GitHub",
       "tags": [
-        "kubernetes",
-        "devops",
-        "cluster-management"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 4
-    },
-    {
-      "id": "voices-1779417925860-0",
-      "section": "voices",
-      "title": "Datasette Agent：让数据库成为 AI 的「可交互知识库」",
-      "summary": "Simon Willison 发布 Datasette Agent，将 SQLite 数据库转化为 AI Agent 可直接查询的接口。Agent 可理解自然语言问题，自动生成 SQL 查询并返回结构化结果。这是将本地数据民主化的新尝试，让任何数据库都能被 AI 理解和操作。",
-      "insight": "→ 数据库作为 Agent 的外部工具接口标准化，直接支撑 Agent 间的数据共享和协议互联需求，是 a2a 生态中数据层的关键基础设施",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
-      "source": "Simon Willison",
-      "tags": [
-        "Agent-Tool",
-        "Data-Interface",
-        "SQLite"
+        "scientific-agents",
+        "benchmark",
+        "astrophysics"
       ],
       "label": "开源",
       "kind": "open",
       "importance": 6
     },
     {
-      "id": "voices-1779417925860-1",
-      "section": "voices",
-      "title": "datasette-agent-sprites：Agent 可视化渲染的「骨骼系统」",
-      "summary": "Datasette 生态新模块 datasette-agent-sprites 0.1a0 发布，提供图形资源和渲染管理能力。使 Agent 能输出结构化的可视化指令而非纯文本，为多模态 Agent 交互铺路。",
-      "insight": "",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything",
-      "source": "Simon Willison",
+      "id": "opensource-20260525-07",
+      "section": "opensource",
+      "title": "prism-coder：本地 LLM + 记忆 + 对抗评测的认知架构实验",
+      "summary": "dcostenco/prism-coder 将 on-device LLM、persistent memory、Hebbian learning、ACT-R spreading activation、多 Agent Hivemind 和 adversarial evaluation 放到同一架构中。它还很早期，但方向贴近自进化与本地隐私。",
+      "insight": "→ 本地 Agent 架构要同时处理记忆、评测、权限和隐私；这类项目适合作为认知架构实验素材。",
+      "url": "https://github.com/dcostenco/prism-coder",
+      "source": "GitHub",
       "tags": [
-        "可视化",
-        "渲染引擎",
-        "多模态"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 4
-    },
-    {
-      "id": "voices-1779417925860-2",
-      "section": "voices",
-      "title": "datasette-agent-charts：数据可视化的 Agent 化新范式",
-      "summary": "datasette-agent-charts 0.1a2 更新，让 Agent 能自动生成图表并理解用户的可视化需求。通过 Agent 推理层和图表生成层的对接，使数据分析从人工操作转向自主决策。",
-      "insight": "",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything",
-      "source": "Simon Willison",
-      "tags": [
-        "数据可视化",
-        "图表生成",
-        "Agent推理"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 5
-    },
-    {
-      "id": "voices-1779417925860-3",
-      "section": "voices",
-      "title": "Datasette Agent 框架正式进入 alpha，开源工具链初具规模",
-      "summary": "datasette-agent 0.1a3 发布，标志着整套 Agent 工具链进入可用阶段。结合 sprites 和 charts 两个子模块，Datasette 正从数据查询工具演进为完整的 Agent 基础设施。Simon Willison 团队持续扩展 Agent 生态的野心初现。",
-      "insight": "→ Datasette Agent 框架提供的标准化数据访问和工具调用模式，是构建可互联 Agent 系统的关键工具层支撑",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything",
-      "source": "Simon Willison",
-      "tags": [
-        "Agent框架",
-        "工具链",
-        "开源生态"
+        "local-llm",
+        "memory",
+        "cognitive-architecture"
       ],
       "label": "开源",
       "kind": "open",
       "importance": 6
     },
     {
-      "id": "voices-1779417925860-4",
-      "section": "voices",
-      "title": "从 SpaceX S-1 看 AI 时代的「基础设施定价权」",
-      "summary": "Simon Willison 解读 SpaceX 招股书摘录，思考基础设施层的商业价值。类比到 AI 领域，谁掌握数据、计算、工具链的底层控制权，谁就掌握定价权。Datasette 等开源工具的意义可能不仅是功能，更是争夺这层话语权。",
-      "insight": "",
-      "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
-      "source": "Simon Willison",
+      "id": "opensource-20260525-08",
+      "section": "opensource",
+      "title": "instar：带调度、会话和记忆的 Claude Code 持久 Agent",
+      "summary": "JKHeadley/instar 把 Claude Code agent 做成带 scheduling、sessions、memory 和 Telegram 通知的持久运行系统。它反映出开发者开始需要“把编码 Agent 放着跑”，而不是只在交互式窗口里临时调用。",
+      "insight": "→ 持久在线 Agent 的核心风险是上下文漂移、权限失控和结果验收；需要明确的任务生命周期与人工确认点。",
+      "url": "https://github.com/JKHeadley/instar",
+      "source": "GitHub",
       "tags": [
-        "基础设施",
-        "商业模式",
-        "开源策略"
+        "persistent-agents",
+        "scheduling",
+        "memory"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 6
+    },
+    {
+      "id": "opensource-20260525-09",
+      "section": "opensource",
+      "title": "adl-cli：企业级 A2A Agent 脚手架开始出现",
+      "summary": "inference-gateway/adl-cli 是一个用于 scaffold 和管理企业级 AI Agents 的命令行工具，强调 A2A 协议。虽然 stars 仍少，但它代表 A2A 从规范走向开发者工具链。",
+      "insight": "→ 协议能否普及，关键看有没有好用的 CLI、模板、测试器和本地 mock 环境。",
+      "url": "https://github.com/inference-gateway/adl-cli",
+      "source": "GitHub",
+      "tags": [
+        "A2A",
+        "CLI",
+        "scaffold"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 6
+    },
+    {
+      "id": "opensource-20260525-10",
+      "section": "opensource",
+      "title": "polyharness：自动进化 prompts、tools 和 harness logic",
+      "summary": "weijt606/polyharness 号称可自动演化 Agent 的 prompts、tools 和 harness logic，并支持 Claude Code、Codex、Hermes 或任意 CLI agent。它是很早期的实验，但切中了自进化 Agent 的工程焦点。",
+      "insight": "→ 自进化需要把搜索空间限制在可评估、可回滚、可审计的 harness 层，避免直接污染生产能力。",
+      "url": "https://github.com/weijt606/polyharness",
+      "source": "GitHub",
+      "tags": [
+        "harness",
+        "self-evolution",
+        "eval-loop"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 6
+    },
+    {
+      "id": "voices-20260525-01",
+      "section": "voices",
+      "title": "OpenAI：工程师角色正在从写代码转向设计环境和反馈环",
+      "summary": "OpenAI 的 Harness Engineering 文章复盘了一个由 Codex 生成代码的内部产品实验：团队重点变成定义目标、拆任务、设计测试、构建 CI 和反馈循环。核心观点是 humans steer, agents execute。",
+      "insight": "→ Agentic 开发的杠杆在规格、环境和验收标准；工程团队需要把 review、test、deploy、observability 都变成 Agent 可消费的接口。",
+      "url": "https://openai.com/index/harness-engineering/",
+      "source": "OpenAI",
+      "tags": [
+        "harness-engineering",
+        "Codex",
+        "feedback-loop"
       ],
       "label": "观点",
       "kind": "voice",
-      "importance": 5
+      "importance": 8
     },
     {
-      "id": "voices-1779417938470-5",
+      "id": "voices-20260525-02",
       "section": "voices",
-      "title": "每秒10个token真的快吗？——LLM推理速度的迷思",
-      "summary": "Simon Willison 深度分析了 token/s 这一常见性能指标的真实含义。在实际应用中，吞吐量数字往往掩盖了端到端延迟的真相，特别是在流式输出和实时交互场景中。这提醒开发者在选型 LLM 服务时，不应只看宣传的吞吐数字。",
-      "insight": "",
-      "url": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
-      "source": "Simon Willison",
+      "title": "Anthropic：Managed Agents 要把 brain 和 hands 解耦",
+      "summary": "Anthropic 在 Managed Agents 文章中强调，harness 中编码的假设会随着模型进步而过时；稳定接口与可替换执行层，是支撑长程 Agent 的关键。这个观点把 Agent 平台从模型 API 拉向运行时工程。",
+      "insight": "→ A2A 与 MCP 也应避免把模型内部能力写死在协议中，而应提供可演进的能力发现、状态和执行边界。",
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "source": "Anthropic Engineering",
       "tags": [
-        "LLM推理",
-        "性能指标",
-        "端到端延迟"
+        "managed-agents",
+        "runtime",
+        "interfaces"
       ],
       "label": "观点",
       "kind": "voice",
-      "importance": 6
+      "importance": 8
     },
     {
-      "id": "voices-1779417938470-6",
+      "id": "voices-20260525-03",
       "section": "voices",
-      "title": "Google I/O 与 Gemini Spark：新一代模型能做什么",
-      "summary": "Simon Willison 评论 Google I/O 发布的 Gemini Spark 等新产品。这场发布会展示了 Google 在 LLM 和多模态能力上的最新进展，包括实时交互、视觉理解等能力升级，标志着大模型应用层的进一步演进。",
-      "insight": "",
-      "url": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
-      "source": "Simon Willison",
+      "title": "Google：六类 Agent 协议正在替代自定义集成代码",
+      "summary": "Google 的 Developer's Guide to AI Agent Protocols 用 ADK 供应链 Agent 示例解释 MCP、A2A 等协议如何减少工具、API 和前端组件的定制集成。它把协议从抽象概念落到真实业务流程里。",
+      "insight": "→ 协议的价值是减少 glue code，提升可组合性；Keyong 相关场景应优先定义任务状态和 artifact 交接，而不是先做复杂框架。",
+      "url": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/",
+      "source": "Google Developers",
       "tags": [
-        "Gemini",
-        "多模态",
-        "Google I/O"
+        "MCP",
+        "A2A",
+        "ADK"
       ],
       "label": "观点",
-      "kind": "voices",
+      "kind": "voice",
+      "importance": 8
+    },
+    {
+      "id": "voices-20260525-04",
+      "section": "voices",
+      "title": "LangChain：Agent Development Lifecycle 成为独立方法论",
+      "summary": "LangChain 最近把 Agent Development Lifecycle 单独拿出来讨论，配合 LangSmith Engine、Sandboxes 和 Deep Agents，强调从构建、观测、评估到部署的闭环。Agent 工程开始拥有自己的生命周期模型。",
+      "insight": "→ 生命周期方法论适合沉淀成模板：需求定义、trace schema、eval set、人工门禁、上线监控和回归任务都应标准化。",
+      "url": "https://blog.langchain.com/the-agent-development-lifecycle/",
+      "source": "LangChain Blog",
+      "tags": [
+        "agent-lifecycle",
+        "LangSmith",
+        "evals"
+      ],
+      "label": "观点",
+      "kind": "voice",
       "importance": 7
     },
     {
-      "id": "voices-1779417938470-7",
+      "id": "voices-20260525-05",
       "section": "voices",
-      "title": "datasette-agent-charts：让数据库自动生成图表的 Agent 工具",
-      "summary": "Simon Willison 发布了 datasette-agent-charts 早期版本，这是一个让 Agent 能自主查询数据库并生成可视化图表的开源工具。体现了 Agent 在数据分析场景的实际应用潜力，进一步推动了 LLM+数据库的深度融合。",
-      "insight": "→ Agent 自主与数据系统交互的能力补充，为 A2A 协议在数据流通中的实际应用提供参考",
-      "url": "https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything",
-      "source": "Simon Willison",
+      "title": "Anthropic：Agent evals 难在自主性、灵活性和中间轨迹",
+      "summary": "Anthropic 的 Agent evals 文章指出，Agent 的自主、智能和灵活性使其更有用，也更难评估；内部和客户实践都显示，真实部署要重视过程指标、任务分解和可复现评测。",
+      "insight": "→ 评测要从最终答案扩展到轨迹、工具调用、恢复动作和人工干预成本，这与 AgentAtlas 的方向相互印证。",
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "source": "Anthropic Engineering",
       "tags": [
-        "Agent",
-        "数据可视化",
-        "开源工具"
+        "agent-evals",
+        "trajectory",
+        "deployment"
       ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 5
+      "label": "观点",
+      "kind": "voice",
+      "importance": 7
     },
     {
-      "id": "industry-1779417938470-8",
+      "id": "voices-20260525-06",
+      "section": "voices",
+      "title": "OpenAI Codex App Server：Agent harness 需要产品级协议",
+      "summary": "OpenAI 介绍 Codex App Server 时提到，同一套 Codex harness 要服务 CLI、IDE、macOS app 和合作方集成，因此需要 bidirectional JSON-RPC、streaming progress、tool use、approvals 和 diffs 等产品级协议能力。",
+      "insight": "→ Agent UI 与 harness 的接口是长期资产；多端一致性、审批和 diff 语义应在早期就作为协议能力设计。",
+      "url": "https://openai.com/index/unlocking-the-codex-harness/",
+      "source": "OpenAI",
+      "tags": [
+        "Codex",
+        "JSON-RPC",
+        "App Server"
+      ],
+      "label": "观点",
+      "kind": "voice",
+      "importance": 7
+    },
+    {
+      "id": "industry-20260525-01",
       "section": "industry",
-      "title": "\"融资+竞速\"：Anthropic、OpenAI、Google 三方争夺 Agent 时代的话语权",
-      "summary": "TLDR AI 汇总行业三大关键动向：Anthropic 获 SpaceX 投资加持，Google 推出 Agent Executor 工具，OpenAI 冲刺上市。这三条新闻共同指向同一个信号——Agent 技术已成为 2025 年决定大模型公司竞争力的核心，融资、技术、估值都在这条赛道上。",
-      "insight": "→ Agent 生态正成为国际竞争焦点，A2A 协议的价值在于标准化这场混战，早期建立互联规范的公司将获得最大话语权",
-      "url": "https://tldr.tech/ai/2026-05-21",
-      "source": "TLDR AI",
+      "title": "OpenAI + Dell：Codex 进入混合和本地企业环境",
+      "summary": "OpenAI 与 Dell Technologies 合作，把 Codex 带入 hybrid 和 on-premises enterprise environments，面向企业内部数据、系统和工作流。Agentic coding 正从云端产品走向安全边界更严格的企业部署。",
+      "insight": "→ 企业真正关心的是数据驻留、审计、权限和现有工作流接入；这会推动 Agent runtime 的私有化与治理能力。",
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership/",
+      "source": "OpenAI",
       "tags": [
-        "Agent",
-        "融资竞争",
-        "行业格局"
+        "Codex",
+        "enterprise",
+        "on-prem"
       ],
       "label": "行业",
       "kind": "industry",
       "importance": 8
     },
     {
-      "id": "research-1779417938470-9",
-      "section": "research",
-      "title": "SOLAR：自学习的 Agent 如何应对永不停歇的数据漂移",
-      "summary": "新论文提出 SOLAR，一个能自优化、持续适应非平稳数据流的自主 Agent 框架。相比传统微调在概念漂移下的灾难遗忘，SOLAR 通过开放式自主学习实现终身适应。这是 Agent 从一次性部署向动态运维演进的重要理论突破。",
-      "insight": "→ 长生命周期 Agent 的自适应能力是 A2A 协议的必要前提，跨系统协议设计需要考虑各方的动态学习机制",
-      "url": "https://arxiv.org/abs/2605.20189",
-      "source": "ArXiv CS.AI",
+      "id": "industry-20260525-02",
+      "section": "industry",
+      "title": "Ramp 用 Codex + GPT-5.5 把代码评审反馈压到分钟级",
+      "summary": "OpenAI 案例显示，Ramp 工程团队使用 Codex with GPT-5.5 进行 code review，并开发内部 agentic tooling 管理 on-call rotation。企业案例的重点不是炫模型，而是把 Agent 嵌进开发者体验。",
+      "insight": "→ 代码评审是 Agent 最容易形成闭环的场景：上下文清晰、标准可测、反馈快，适合作为 harness 工程的标杆工作流。",
+      "url": "https://openai.com/index/ramp/",
+      "source": "OpenAI",
       "tags": [
-        "Agent自学习",
-        "概念漂移",
-        "终身学习"
+        "code-review",
+        "developer-productivity",
+        "Codex"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 7
+    },
+    {
+      "id": "industry-20260525-03",
+      "section": "industry",
+      "title": "Anthropic 推出金融服务 Agent 模板",
+      "summary": "Anthropic 发布 10 个金融服务 ready-to-run agent templates，覆盖 pitchbook、KYC 文件筛查和月结关账等工作，并作为 Claude Cowork、Claude Code 插件和 Managed Agents cookbook 交付。",
+      "insight": "→ 垂直场景 Agent 的产品形态正在从 demo 转向模板化交付；模板需要配套数据连接、审批、审计和例外处理。",
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "source": "Anthropic",
+      "tags": [
+        "finance",
+        "agent-templates",
+        "Claude Cowork"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 8
+    },
+    {
+      "id": "industry-20260525-04",
+      "section": "industry",
+      "title": "PwC 扩大 Claude 合作：3 万员工培训认证，面向 CFO 组织重塑",
+      "summary": "Anthropic 与 PwC 扩大合作，围绕 agentic technology build、AI-native deal-making 和 enterprise function reinvention 建立能力，并计划培训认证 30,000 名 PwC 专业人员。",
+      "insight": "→ Agent 落地越来越像组织变革项目，不只是采购模型；咨询公司会把流程重构、审计和角色迁移打包出售。",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "source": "Anthropic",
+      "tags": [
+        "PwC",
+        "enterprise",
+        "finance"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 7
+    },
+    {
+      "id": "industry-20260525-05",
+      "section": "industry",
+      "title": "Gemini Enterprise Agent Platform：Google 把 Vertex AI 演进成 Agent 平台",
+      "summary": "Google Cloud 推出 Gemini Enterprise Agent Platform，用于 build、scale、govern 和 optimize agents，将 Vertex AI 的模型选择、模型构建、Agent 构建和新的集成、DevOps、编排、安全能力整合起来。",
+      "insight": "→ 平台竞争点正在变成“企业怎么规模化管理 Agent”，包括模型选择、运行时、权限、评估和上线治理。",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "source": "Google Cloud",
+      "tags": [
+        "Gemini Enterprise",
+        "Agent Platform",
+        "governance"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 8
+    },
+    {
+      "id": "industry-20260525-06",
+      "section": "industry",
+      "title": "OpenAI Frontier + AWS：企业 Agent 平台进入云分发阶段",
+      "summary": "OpenAI 与 Amazon 的合作把 Frontier、Stateful Runtime Environment 和企业 Agent 能力带入 AWS 分发生态。大型云厂商开始把 Agent runtime、模型和治理能力组合销售。",
+      "insight": "→ 当 Agent 平台进入云原生分发，标准化运行时和状态管理会成为云厂商锁定开发者的关键接口。",
+      "url": "https://openai.com/index/amazon-partnership/",
+      "source": "OpenAI",
+      "tags": [
+        "Frontier",
+        "AWS",
+        "stateful-runtime"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 8
+    },
+    {
+      "id": "industry-20260525-07",
+      "section": "industry",
+      "title": "Claude for Small Business：中小企业也开始拿到预置 Agent workflow",
+      "summary": "Anthropic 推出 Claude for Small Business，提供 15 个跨 finance、operations、sales、marketing、HR 和 customer service 的 ready-to-run agentic workflows，并强调人类批准后再发送、发布或付款。",
+      "insight": "→ 小企业 Agent 化的关键不是复杂自定义，而是默认可用的流程模板和清晰审批点。",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "source": "Anthropic",
+      "tags": [
+        "small-business",
+        "workflows",
+        "approval"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 7
+    },
+    {
+      "id": "industry-20260525-08",
+      "section": "industry",
+      "title": "Google AI Edge Gallery 支持 MCP：端侧 Agent 也要接入工具协议",
+      "summary": "Google AI Edge Gallery 新增 MCP integration、notifications reminders 和 persistent chat history，目标是让开发者构建 connected、automated、on-device agentic experiences。",
+      "insight": "→ MCP 不只服务云端工具调用，也会进入端侧 Agent；端云协同需要统一工具描述、权限提示和会话连续性。",
+      "url": "https://developers.googleblog.com/en/a-smarter-google-ai-edge-gallery-mcp-integration-notifications-and-session-continuity/",
+      "source": "Google Developers",
+      "tags": [
+        "MCP",
+        "on-device",
+        "AI Edge"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 7
+    },
+    {
+      "id": "research-20260525-01",
+      "section": "research",
+      "title": "WildClawBench：真实长程 Agent 评测正在替代短程合成测试",
+      "summary": "WildClawBench 指出，现有 Agent benchmark 过度依赖 synthetic sandboxes、短程任务、mock APIs 和 final-answer checks。它用 native runtime、60 个双语多模态任务和真实 CLI harness 测试 Agent 完成端到端工作的能力。",
+      "insight": "→ 评测要逼近部署环境，否则测到的是 benchmark 适配而不是真实工作能力。",
+      "url": "https://arxiv.org/abs/2605.10912",
+      "source": "arXiv",
+      "tags": [
+        "long-horizon",
+        "native-runtime",
+        "OpenClaw"
+      ],
+      "label": "研究",
+      "kind": "research",
+      "importance": 8
+    },
+    {
+      "id": "research-20260525-02",
+      "section": "research",
+      "title": "AgentCo-op：多 Agent 工作流合成不必全局搜索",
+      "summary": "AgentCo-op 将 automated multi-agent workflow design 重新表述为 retrieval-based synthesis：检索可复用组件、用 typed artifacts 交接，再根据执行证据做局部修复。这个思路特别适合开放式科学任务。",
+      "insight": "→ 多 Agent 设计应优先考虑组件语义和局部可修复性，而不是一开始就设计大型拓扑优化器。",
+      "url": "https://arxiv.org/abs/2605.20425",
+      "source": "arXiv",
+      "tags": [
+        "workflow",
+        "retrieval",
+        "repair"
+      ],
+      "label": "研究",
+      "kind": "research",
+      "importance": 8
+    },
+    {
+      "id": "research-20260525-03",
+      "section": "research",
+      "title": "AgentAtlas：把 Agent 失败切到控制决策和轨迹层",
+      "summary": "AgentAtlas 关注 Beyond Outcome Leaderboards，主张用控制决策 taxonomy 和 trajectory-failure taxonomy 分析 Agent 行为。它能帮助区分模型不知道、工具失败、错误恢复失败、越权拒绝等不同问题。",
+      "insight": "→ 轨迹分类是 Agent 评测和生产 observability 的共同语言。",
+      "url": "https://arxiv.org/abs/2605.20530",
+      "source": "arXiv",
+      "tags": [
+        "taxonomy",
+        "leaderboard",
+        "trajectory"
+      ],
+      "label": "研究",
+      "kind": "research",
+      "importance": 8
+    },
+    {
+      "id": "research-20260525-04",
+      "section": "research",
+      "title": "EvoMemBench：Agent Memory 终于有了自进化视角 benchmark",
+      "summary": "EvoMemBench 组织了 in-episode 与 cross-episode、knowledge-oriented 与 execution-oriented 四类记忆评测维度，指出现有 memory benchmark 无法完整衡量 Agent 在持续任务中的记忆更新与检索。",
+      "insight": "→ 记忆系统要被分层评测：事实记忆、过程记忆、失败经验和执行偏好不能混在一个黑箱里。",
+      "url": "https://arxiv.org/abs/2605.18421",
+      "source": "arXiv",
+      "tags": [
+        "memory",
+        "benchmark",
+        "evolution"
+      ],
+      "label": "研究",
+      "kind": "research",
+      "importance": 8
+    },
+    {
+      "id": "research-20260525-05",
+      "section": "research",
+      "title": "Do Self-Evolving Agents Forget：自进化并不总是单调变好",
+      "summary": "该论文指出，Agent 通过 workflow、skill、model 和 memory evolution 适应新任务分布时，可能逐步损害旧能力，形成 capability erosion under self-evolution。也就是说，自进化需要保留与回归，而不能只看新任务收益。",
+      "insight": "→ 自进化系统必须内置 regression suite、版本化技能和回滚策略，否则会把短期优化变成长期退化。",
+      "url": "https://arxiv.org/abs/2605.09315",
+      "source": "arXiv",
+      "tags": [
+        "self-evolution",
+        "forgetting",
+        "regression"
+      ],
+      "label": "研究",
+      "kind": "research",
+      "importance": 8
+    },
+    {
+      "id": "research-20260525-06",
+      "section": "research",
+      "title": "Agent-ValueBench：Agent 的价值观不能只用底层模型回答来代表",
+      "summary": "Agent-ValueBench 认为自治 Agent 的价值系统会受到 harness、环境和连续行动影响，与底层语言模型静态问答时表现出的价值倾向不同。论文提供可执行环境和价值冲突任务，评估 Agent 在行动轨迹中的取舍。",
+      "insight": "→ Agent alignment 要评估执行过程和工具行为；只测模型回答，很可能漏掉 harness 诱发的行为偏差。",
+      "url": "https://arxiv.org/abs/2605.10365",
+      "source": "arXiv",
+      "tags": [
+        "alignment",
+        "values",
+        "agent-harness"
       ],
       "label": "研究",
       "kind": "research",
       "importance": 7
     },
     {
-      "id": "research-1779417952280-10",
+      "id": "research-20260525-07",
       "section": "research",
-      "title": "COSMO-Agent：用强化学习「打通」CAD-CAE 的语义鸿沟",
-      "summary": "工业设计中的迭代优化长期卡在 CAD 和 CAE 之间的语义转换问题。COSMO-Agent 通过工具增强的强化学习框架，让 Agent 能够在复杂约束下将仿真反馈直接转化为有效的几何编辑，闭环完成设计优化。这是 Agent 在工程领域的一个精细化应用尝试。",
-      "insight": "→ 展示 Agent 跨域工具调用的实践案例，CAD/CAE 的协议互联需求与 a2a 通信机制类似，可参考其约束下的多工具编排方案。",
-      "url": "https://arxiv.org/abs/2605.20190",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "tool-augmented-agent",
-        "RL",
-        "CAD-CAE"
-      ],
-      "label": "研究",
-      "kind": "research",
-      "importance": 6
-    },
-    {
-      "id": "research-1779417952280-11",
-      "section": "research",
-      "title": "OSCToM：用对抗生成「教」大模型复杂社交推理",
-      "summary": "当前 LLM 在简单 ToM 任务上表现不错，但在涉及递归信念和信息不对称的复杂社交场景中仍显得无力。OSCToM 通过强化学习引导的对抗性样本生成，构建更难的 ToM 评测基准，迫使模型学习更深层的因果推理能力。这对 Agent 的多步决策和人-Agent 交互设计有启示。",
-      "insight": "",
-      "url": "https://arxiv.org/abs/2605.20423",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "theory-of-mind",
-        "adversarial-generation",
-        "LLM"
-      ],
-      "label": "研究",
-      "kind": "research",
-      "importance": 5
-    },
-    {
-      "id": "research-1779417952280-12",
-      "section": "research",
-      "title": "AgentCo-op：在混沌中「自组织」多 Agent 工作流",
-      "summary": "开放式科研任务中，缺乏标准接口和可靠评估指标，多 Agent 协作极其困难。AgentCo-op 用检索增强合成的思路，从现有技能库、工具库和外部 Agent 中组合出可复用的工作流。相当于为 Agent 生态提供了一套「乐高拼装」系统，无需预先定义整套编排逻辑。",
-      "insight": "→ 直接对标 a2a 协议的应用场景——多 Agent 互操作、工作流自动组合。检索合成方法可作为动态发现和调用异构 Agent 的参考方案。",
-      "url": "https://arxiv.org/abs/2605.20425",
-      "source": "ArXiv CS.AI",
+      "title": "PROTEA：用离线评测和图上归因改进多 Agent workflow",
+      "summary": "PROTEA 提出一个面向 workflow designers、prompt engineers 和 planners 的 unified interface，用离线执行、节点级 rubrics 和图上可视化状态定位多 Agent DAG 中的瓶颈。",
+      "insight": "→ 多 Agent workflow 的调试最好是图结构、节点输出和评分理由同时出现，便于定位该改哪个 Agent。",
+      "url": "https://arxiv.org/html/2605.18032v1",
+      "source": "arXiv",
       "tags": [
         "multi-agent",
-        "workflow-synthesis",
-        "retrieval-augmented"
+        "DAG",
+        "offline-eval"
       ],
       "label": "研究",
       "kind": "research",
       "importance": 7
     },
     {
-      "id": "research-1779417952280-13",
+      "id": "research-20260525-08",
       "section": "research",
-      "title": "用神经网络「加速」逻辑推理，嵌入学问很关键",
-      "summary": "逻辑推理的搜索空间巨大，用神经网络排序候选项能显著提速。关键在于如何为逻辑语句生成有效的嵌入向量。本文评测了多种嵌入方法对下游推理效率的影响，为神经-符号混合系统的设计提供基础。这是 AI 推理链路优化的底层工作。",
-      "insight": "",
-      "url": "https://arxiv.org/abs/2605.20467",
-      "source": "ArXiv CS.AI",
+      "title": "Agent evaluation 正在向资源约束和基础设施噪声校准",
+      "summary": "Anthropic 的 infrastructure noise 研究提醒，Agent 编码评测中 CPU、RAM、时间限制和 sandbox provider 都可能改变测试含义。不同资源预算下的两个 Agent 可能并不是在参加同一场考试。",
+      "insight": "→ Harness 工程要记录资源预算和执行环境，否则 eval 分数很难跨模型、跨平台比较。",
+      "url": "https://www.anthropic.com/engineering/infrastructure-noise",
+      "source": "Anthropic Engineering",
       "tags": [
-        "embeddings",
-        "logic-reasoning",
-        "neural-symbolic"
-      ],
-      "label": "研究",
-      "kind": "research",
-      "importance": 5
-    },
-    {
-      "id": "research-1779417952280-14",
-      "section": "research",
-      "title": "ECUAS_n：为「不确定性系统」立标尺，高风险决策需要它",
-      "summary": "在医疗、金融等高风险决策场景，仅有预测不够——系统还要输出置信度，让人或下游系统决定接纳还是拒绝。但现有的不确定性评估标准仍然零散。ECUAS_n 提出了一套原理性的评估指标体系，让不确定性增强系统（UA Systems）能被科学量化和对标。这对 Agent 的可靠性评测至关重要。",
-      "insight": "",
-      "url": "https://arxiv.org/abs/2605.20490",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "uncertainty-quantification",
-        "evaluation-metrics",
-        "decision-making"
-      ],
-      "label": "研究",
-      "kind": "research",
-      "importance": 6
-    },
-    {
-      "id": "research-1779417964772-15",
-      "section": "research",
-      "title": "「精准标准」的陷阱：Benchmark 如何同时高估和低估 AI 能力？",
-      "summary": "ArXiv 新论文指出，基准测试虽然追踪 AI 进展的标配，但因为倾向可精确定义、自动评分、易于优化的任务，导致对部署能力的评估失真。论文呼吁采用开放世界评估作为补充，更真实地衡量前沿 AI 的实际表现。这是对当前 AI 评测方法论的根本性反思。",
-      "insight": "",
-      "url": "https://arxiv.org/abs/2605.20520",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "benchmark",
-        "evaluation",
-        "methodology"
+        "eval-noise",
+        "sandbox",
+        "Terminal-Bench"
       ],
       "label": "研究",
       "kind": "research",
       "importance": 7
     },
     {
-      "id": "research-1779417964772-16",
-      "section": "research",
-      "title": "Agent 评测碎片化问题终于有人梳理了——AgentAtlas 能统一这个乱局吗？",
-      "summary": "ArXiv 最新研究指出 LLM Agent 评测面临严重碎片化问题：不同 benchmark 各自衡量最终成功率、工具调用有效性、重复通过一致性、轨迹安全性或攻击鲁棒性。AgentAtlas 试图建立跨维度的统一评估框架。这对 Agent 产品化部署具有重要参考价值，是该领域亟需的标准化尝试。",
-      "insight": "→ A2A 协议制定中，多 Agent 交互的评估标准化是关键；AgentAtlas 的多维度框架对设计互操作性指标有直接借鉴意义",
-      "url": "https://arxiv.org/abs/2605.20530",
-      "source": "ArXiv CS.AI",
+      "id": "china-20260525-01",
+      "section": "china",
+      "title": "千问云：模型服务全面 Skill、CLI 化，面向 Agent 重构入口",
+      "summary": "据腾讯新闻转载节点财经报道，阿里云在 2026 阿里云峰会上发布面向 Agent 的千问云，提供 150 多款主流模型 API，并将模型选择、调用、认证配置和用量查询封装为 Skills 和 CLI。",
+      "insight": "→ 国内模型平台开始把“给人看的控制台”改造成“给 Agent 用的能力接口”，这会直接影响模型路由、成本治理和权限设计。",
+      "url": "https://news.qq.com/rain/a/20260520A05B1H00",
+      "source": "腾讯新闻 / 节点财经",
       "tags": [
-        "agent-evaluation",
-        "benchmark-fragmentation",
-        "standardization"
+        "千问云",
+        "Skills",
+        "CLI"
       ],
-      "label": "研究",
-      "kind": "research",
+      "label": "国内",
+      "kind": "industry",
       "importance": 8
     },
     {
-      "id": "research-1779417964772-17",
-      "section": "research",
-      "title": "用 AI Agent 「教」谈判：让机器学会人类最难的「平衡术」",
-      "summary": "新研究用 AI Agent 模拟真实谈判中的人格特质与立场平衡——既要同理他人又要坚持自我，既要温和也要原则性。通过系统性调控 Agent 的「性格参数」，研究者可以精确测试不同谈判风格的效果。这是 Agent 从任务执行向社交/博弈领域拓展的有趣尝试。",
-      "insight": "",
-      "url": "https://arxiv.org/abs/2605.20554",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "agent-personality",
-        "negotiation",
-        "behavioral-simulation"
-      ],
-      "label": "研究",
-      "kind": "research",
-      "importance": 5
-    },
-    {
-      "id": "research-1779417964772-18",
-      "section": "research",
-      "title": "用麻将训练 RL 智能体——为什么这个「小游戏」反而很 hardcore？",
-      "summary": "新工具 Mahjax 用 JAX 实现了 GPU 加速的麻将模拟器，用于强化学习研究。麻将具有多人、信息不完全、高维状态空间等特性，是 RL 算法的「天然压力测试」——比围棋复杂度更接近真实决策问题。这个工具可能激发新一轮的 RL 算法突破。",
-      "insight": "",
-      "url": "https://arxiv.org/abs/2605.20577",
-      "source": "ArXiv CS.AI",
-      "tags": [
-        "reinforcement-learning",
-        "imperfect-information-games",
-        "simulation"
-      ],
-      "label": "开源",
-      "kind": "open",
-      "importance": 4
-    },
-    {
-      "id": "china-1779417964772-19",
+      "id": "china-20260525-02",
       "section": "china",
-      "title": "小米 SUV 起价 39 万，特斯拉前厂长造车首秀",
-      "summary": "雷军发布小米汽车最新 SUV 产品，起价 39 万元，由特斯拉前副总裁宋钢主导。这是传统科技公司进入高端车市的又一尝试，但与 AI 行业发展无直接关联。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422088.html",
-      "source": "量子位",
+      "title": "阿里云 Agent Skills 门户：云资源操作进入 Agent 可调用清单",
+      "summary": "阿里云 Agent Skills 门户展示了面向 OpenClaw、Qwen Code、Claude Code、Codex、Cursor、Gemini CLI 等工具的 Skills，包括 ECS 诊断、DataWorks 开发、RDS Copilot、云资源部署和安全加固等。",
+      "insight": "→ 云厂商会把运维、诊断和合规操作封装成 Skill；安全边界和 HITL 检查点会成为落地关键。",
+      "url": "https://skills.aliyun.com/",
+      "source": "阿里云",
       "tags": [
-        "xiaomi",
-        "electric-vehicle",
-        "consumer-product"
-      ],
-      "label": "行业",
-      "kind": "industry",
-      "importance": 1
-    },
-    {
-      "id": "china-1779417976139-20",
-      "section": "china",
-      "title": "联想财报破纪录背后：AI PC 硬件红利还能吃多久？",
-      "summary": "联想集团Q4营收利润双创新高，调整后净利润同比增长42.1%，兑现历史最佳财年。这份成绩单反映了 AI PC 浪潮对传统硬件厂商的拉动，但也暴露了一个问题：硬件红利的天花板正在逼近，软件生态和 AI 应用才是下一轮竞争的关键。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422127.html",
-      "source": "量子位",
-      "tags": [
-        "AI-PC",
-        "硬件",
-        "财报"
-      ],
-      "label": "行业",
-      "kind": "industry",
-      "importance": 5
-    },
-    {
-      "id": "china-1779417976139-21",
-      "section": "china",
-      "title": "腾讯混元 Hy-MT2：又一个「自研翻译模型」，但能打败谷歌吗？",
-      "summary": "腾讯混元开源翻译模型 Hy-MT2，核心竞争力在指令遵循能力提升，同步上线小程序「腾讯Hy翻译」。国内大厂纷纷自研翻译模型，但在实际应用中能否击败 Google Translate 的多语言优势和长尾适配能力仍是疑问。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422068.html",
-      "source": "量子位",
-      "tags": [
-        "翻译模型",
-        "混元",
-        "开源"
+        "Agent Skills",
+        "cloud-ops",
+        "HITL"
       ],
       "label": "国内",
-      "kind": "china",
-      "importance": 4
+      "kind": "industry",
+      "importance": 8
     },
     {
-      "id": "china-1779417976139-22",
+      "id": "china-20260525-03",
       "section": "china",
-      "title": "OpenAI 「非数学模型」破解 80 年难题：LLM 做科研的界限在哪？",
-      "summary": "OpenAI 非数学模型首次自主突破 80 年未解数学难题，生成 125 页推演过程，连菲尔兹奖得主都感到意外。这标志着 LLM 从工具属性向科研创新力的转折，但也引发本质问题：AI 模型究竟是在「理解」还是在「统计模式匹配」？",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422032.html",
-      "source": "量子位",
+      "title": "百度 Create 2026 提出 DAA：用日活智能体数衡量 AI 生态",
+      "summary": "Create 2026 百度 AI 开发者大会上，李彦宏提出 DAA（日活智能体数）概念，并发布 DuMate、秒哒 3.0、百度一镜和伐谋 2.0 等全栈智能体产品矩阵。这个口径把关注点从 token 消耗转到 Agent 实际交付任务。",
+      "insight": "→ DAA 是一个很值得观察的平台指标：它天然要求任务定义、完成证明和用户价值闭环，而不是只看调用量。",
+      "url": "https://news.qq.com/rain/a/20260513A09OZM00",
+      "source": "腾讯新闻 / 聚牛科技",
       "tags": [
-        "LLM",
-        "数学推理",
-        "科学发现"
+        "百度",
+        "DAA",
+        "DuMate"
       ],
-      "label": "研究",
-      "kind": "research",
-      "importance": 9
-    },
-    {
-      "id": "china-1779417976139-23",
-      "section": "china",
-      "title": "「全员Coding + 众创」能救风行在线吗？CEO 的 AI 焦虑症显露无遗",
-      "summary": "风行在线CEO 易正朝提出先全员Coding、再All in众创的战略，核心逻辑是用 AI 放大执行力，解药是「交付结果」。这反映了传统互联网公司面对 AI 浪潮的焦虑，但高喊口号而缺乏具体商业落地的危险性也很明显。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422001.html",
-      "source": "量子位",
-      "tags": [
-        "AI转型",
-        "众创",
-        "人力重组"
-      ],
-      "label": "观点",
-      "kind": "voice",
-      "importance": 3
-    },
-    {
-      "id": "china-1779417976139-24",
-      "section": "china",
-      "title": "千问 3.7 力压全球：阿里国产模型冠军里程碑，但市场份额还是甲骨文的？",
-      "summary": "Artificial Analysis 榜单显示千问 3.7-Max 位列国产模型冠军、全球前五。模型性能跨越只是开始，关键在于阿里云百炼 API 服务的商用转化能力——能否从榜单优势转化为市场占有率，才是检验真实竞争力的标准。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422009.html",
-      "source": "量子位",
-      "tags": [
-        "千问3.7",
-        "性能排名",
-        "国产模型"
-      ],
-      "label": "研究",
-      "kind": "research",
+      "label": "国内",
+      "kind": "industry",
       "importance": 7
     },
     {
-      "id": "china-1779417988777-25",
+      "id": "china-20260525-04",
       "section": "china",
-      "title": "风光发电普查首次用AI完成，北大+阿里登《自然》——数据密集型产业的新范式",
-      "summary": "北大与阿里达摩院联合研究利用AI技术实现中国风光发电资源的大规模普查，成果发表于《自然》。该工作通过遥感影像、气象数据等多源数据融合与AI模型，大幅提升了能源规划的效率与精度，对加快双碳目标实现具有重要意义。标志着AI在基础设施级数据应用中的新突破。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/422002.html",
-      "source": "量子位",
+      "title": "Qwen3.6-Plus 强化 Agentic Coding 与前端开发体验",
+      "summary": "阿里云开发者社区介绍 Qwen3.6-Plus 的代码开发升级，强调 Agentic Coding、Vibe Coding、长上下文和多模态识别定位能力，并已在百炼平台开放体验。",
+      "insight": "→ 国产模型在编程 Agent 场景上继续加速，后续需要关注真实 terminal、长任务和代码评审 benchmark，而不只看生成 demo。",
+      "url": "https://developer.aliyun.com/article/1724039",
+      "source": "阿里云开发者社区",
       "tags": [
-        "遥感AI",
-        "能源规划",
-        "多源数据融合"
+        "Qwen3.6",
+        "coding-agent",
+        "Bailian"
       ],
-      "label": "研究",
-      "kind": "research",
+      "label": "国内",
+      "kind": "industry",
       "importance": 7
     },
     {
-      "id": "china-1779417988777-26",
+      "id": "china-20260525-05",
       "section": "china",
-      "title": "上海交大教授半天课拆解Agent底层逻辑——院校视角的从0到1指南",
-      "summary": "上海交大AI教授推出线下培训课程，系统讲解Agent的核心原理与实现逻辑。课程以拆解底层架构为主，面向想要深入理解Agent机制的从业者。属于学术界与产业对接的知识传播形式，有助于从业者建立扎实的技术基础。",
-      "insight": "→ Agent底层逻辑的系统化讲解有助于a2a协议设计中的标准化认知，有参考价值",
-      "url": "https://www.qbitai.com/2026/05/421697.html",
-      "source": "量子位",
+      "title": "Manus 回购传闻：Agent 技术深度绑定大厂底层系统后的切割难题",
+      "summary": "36氪 8点1氪援引多方消息称，Manus 创始人计划融资约 10 亿美元回购公司，但最大挑战在于 Agentic AI 技术已大量集成进 Meta 底层系统，如何拆分仍无明确方案。",
+      "insight": "→ 这条消息提醒：Agent 系统的长期价值不只在模型和产品，还在运行时、数据、工具链和平台耦合；标准协议能降低未来迁移成本。",
+      "url": "https://eu.36kr.com/zh/p/3819709302329735",
+      "source": "36氪",
       "tags": [
-        "Agent架构",
-        "教育",
-        "底层逻辑"
+        "Manus",
+        "Meta",
+        "technical-separation"
       ],
-      "label": "观点",
-      "kind": "voice",
-      "importance": 5
+      "label": "国内",
+      "kind": "industry",
+      "importance": 7
     },
     {
-      "id": "china-1779417988777-27",
+      "id": "china-20260525-06",
       "section": "china",
-      "title": "出行数据玩家崭露头角，「全场景+全链条」成AI大模型迭代的新入口",
-      "summary": "某出行领域数据公司凭借全场景数据覆盖与全链条服务能力，成为AI大模型高效迭代的重要数据源。该案例反映出在垂直领域掌握数据密度与完整度的玩家，正在成为AI产业链中的关键枢纽。数据质量与规模的竞争力逐渐超越算法本身。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/421694.html",
-      "source": "量子位",
+      "title": "文心快码 Comate：中文开发者场景继续拥抱 Agent 技术",
+      "summary": "百度开发者中心文章将 2026 定义为 AI 编程工具全面拥抱 Agent 技术的一年，并讨论文心快码 Comate 如何用 Agent 技术改善中文开发者的编码体验。",
+      "insight": "→ 国内 coding assistant 会从补全转向任务代理，尤其适合中文需求理解、代码库检索和企业内部工程规范执行。",
+      "url": "https://developer.baidu.com/article/detail.html?id=5574169",
+      "source": "百度开发者中心",
       "tags": [
-        "数据策略",
-        "垂直领域",
-        "大模型训练"
+        "Comate",
+        "coding-agent",
+        "Baidu"
       ],
-      "label": "行业",
+      "label": "国内",
       "kind": "industry",
       "importance": 6
-    },
-    {
-      "id": "china-1779417988777-28",
-      "section": "china",
-      "title": "第四届中国AIGC产业峰会：400万从业者集中观看近20场对谈——产业共识在凝聚",
-      "summary": "量子位举办的第四届AIGC产业峰会在520当天吸引数百万观众，汇聚近20场演讲与对话。峰会集中呈现当前AIGC领域的核心观点与行业共识，是观察行业热点与技术方向的重要窗口。大规模参与说明AIGC已成为广泛的从业者关注焦点。",
-      "insight": "",
-      "url": "https://www.qbitai.com/2026/05/421691.html",
-      "source": "量子位",
-      "tags": [
-        "行业峰会",
-        "AIGC",
-        "从业者认知"
-      ],
-      "label": "行业",
-      "kind": "industry",
-      "importance": 5
-    },
-    {
-      "id": "china-1779417988777-29",
-      "section": "china",
-      "title": "喜剧变成可复制的科学？土木生阿球用「AI思维」破解创意产业化难题",
-      "summary": "闹剧场创始人阿球从地产人转身喜剧创作者，尝试用数据与系统化方法论将喜剧这一创意密集型行业转化为可批量复制的生产体系。虽非直接AI产品，但反映出AI时代「流程化+可复制」的思维方式正渗透创意产业，值得关注创意与AI融合的新可能性。",
-      "insight": "",
-      "url": "https://36kr.com/p/3816066708872713?f=rss",
-      "source": "36氪",
-      "tags": [
-        "创意产业化",
-        "系统化思维",
-        "内容生产"
-      ],
-      "label": "国内",
-      "kind": "china",
-      "importance": 3
-    },
-    {
-      "id": "china-1779417994218-30",
-      "section": "china",
-      "title": "Manus「技术切割」困局：10亿美金回购，却被Meta底层系统死死绑定",
-      "summary": "Manus创始人计划融资10亿美元回购公司，估值不低于Meta收购时的20亿美元，并谋求在中国重新落地后赴港上市。但核心障碍是技术剥离——Manus的Agentic AI技术已深度融入Meta底层系统，如何「切割」至今无明确方案，三位创始人最终也可能放弃。这反映出AI公司被收购后的深层困境。",
-      "insight": "→ Manus的Agentic AI技术与Meta系统深度耦合问题，直接关联A2A协议标准化的必要性。若AI系统高度定制化绑定，难以互联互通，正说明开放协议的战略价值。",
-      "url": "https://36kr.com/p/3819709302329735?f=rss",
-      "source": "36氪",
-      "tags": [
-        "Agentic AI",
-        "并购风险",
-        "技术耦合"
-      ],
-      "label": "行业",
-      "kind": "industry",
-      "importance": 7
     }
   ]
 };
