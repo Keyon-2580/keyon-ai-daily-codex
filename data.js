@@ -1,11 +1,12 @@
 window.APP_DATA = {
-  "generatedAt": "2026-05-25T02:36:28Z",
+  "generatedAt": "2026-05-25T03:03:50Z",
   "sourceDigestDate": "2026-05-25",
   "dateText": "2026年5月25日 星期一",
   "editorNote": [
     "今天的主线非常清楚：Agent 不再是一个模型能力展示词，而是在变成一套可部署、可治理、可评测的工程系统。<a href=\"https://openai.com/index/introducing-gpt-5-5/\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAI GPT-5.5</a> 把 agentic coding、computer use 和跨工具长任务放到同一个能力框架里；<a href=\"https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud\" target=\"_blank\" rel=\"noopener noreferrer\">Google I/O 26</a> 则把 Antigravity 2.0、Managed Agents API 和 Gemini Enterprise Agent Platform 串成从本地开发到云端部署的链路。模型强只是入场券，真正的竞争点正在转向 harness、状态、权限、回放和组织级治理。",
     "论文侧也在补关键短板：<a href=\"https://arxiv.org/abs/2605.20425\" target=\"_blank\" rel=\"noopener noreferrer\">AgentCo-op</a> 用 typed artifact handoff 合成多 Agent 科研工作流，<a href=\"https://arxiv.org/abs/2605.20530\" target=\"_blank\" rel=\"noopener noreferrer\">AgentAtlas</a> 试图把 Agent 评测从单一成功率拉回轨迹、控制决策和失败归因。再叠加 <a href=\"https://arxiv.org/abs/2605.18421\" target=\"_blank\" rel=\"noopener noreferrer\">EvoMemBench</a> 与自进化遗忘问题，今天更像是一个信号：下一阶段的 Agent 工程，不是拼更大的 prompt，而是拼更可靠的闭环。",
-    "国内同样在向 Agent 原生基础设施靠拢。<a href=\"https://platform.qianwenai.com/skills\" target=\"_blank\" rel=\"noopener noreferrer\">QianWen AI Skills</a> 和 <a href=\"https://skills.aliyun.com/\" target=\"_blank\" rel=\"noopener noreferrer\">阿里云 Agent Skills 门户</a> 把模型调用、认证、用量和云资源操作变成 Agent 可安装的技能；百度 Create 2026 提出 DAA（日活智能体数）这个新指标，说明平台开始用“有多少 Agent 真正在交付任务”来衡量生态活力。Keyong Lens 今天最值得盯的三件事：Harness 工程、A2A/互操作、自进化评测。"
+    "国内同样在向 Agent 原生基础设施靠拢。<a href=\"https://platform.qianwenai.com/skills\" target=\"_blank\" rel=\"noopener noreferrer\">QianWen AI Skills</a> 和 <a href=\"https://skills.aliyun.com/\" target=\"_blank\" rel=\"noopener noreferrer\">阿里云 Agent Skills 门户</a> 把模型调用、认证、用量和云资源操作变成 Agent 可安装的技能；百度 Create 2026 提出 DAA（日活智能体数）这个新指标，说明平台开始用“有多少 Agent 真正在交付任务”来衡量生态活力。Keyong Lens 今天最值得盯的三件事：A2A 互操作落地、Harness 工程、自进化评测。",
+    "协议层迎来里程碑：<a href=\"https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year\" target=\"_blank\" rel=\"noopener noreferrer\">A2A 协议正式突破 150 家组织</a>，在 Google、Microsoft、AWS 三大云平台落地并进入首批企业生产环境。Anthropic 以 $900B 估值完成 $30B 融资，<a href=\"https://jls42.org/en/news/ia-actualites-19-may-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Karpathy 加入 Anthropic</a> 重建预训练研究。中国模型在 OpenRouter 用量占比突破 60%（Kimi K2.6、DeepSeek V4、GLM-5.1、Qwen 3），开源+低价正在全球重塑推理市场格局。"
   ],
   "lens": [
     {
@@ -18,7 +19,7 @@ window.APP_DATA = {
     },
     {
       "label": "A2A / 互操作",
-      "value": 94
+      "value": 98
     },
     {
       "label": "Agentic 架构",
@@ -75,23 +76,23 @@ window.APP_DATA = {
     {
       "date": "05.25",
       "fullDate": "2026-05-25",
-      "theme": "Agent 进入工程系统战",
-      "take": "今天最强信号来自三条线：模型开始原生长任务，平台补齐 harness 与治理，论文把互操作、评测和自进化闭环推到前台。",
+      "theme": "A2A 落地 + Agent 工程系统战",
+      "take": "A2A 协议突破 150 家组织进入生产，模型层 GPT-5.5 和平台层 Google/LangChain 同时补齐 harness 与治理，论文把互操作、评测和自进化闭环推到前台。",
       "items": [
+        {
+          "title": "A2A 协议突破 150 家组织，在 Google/Microsoft/AWS 落地生产",
+          "source": "Linux Foundation",
+          "url": "https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year"
+        },
         {
           "title": "GPT-5.5 把 agentic coding、computer use 和跨工具任务放到同一能力框架",
           "source": "OpenAI",
           "url": "https://openai.com/index/introducing-gpt-5-5/"
         },
         {
-          "title": "Google I/O 26 推出 Antigravity 2.0 与 Managed Agents API",
-          "source": "Google Cloud",
-          "url": "https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud"
-        },
-        {
-          "title": "AgentCo-op 与 AgentAtlas 同时把多 Agent 互操作和轨迹评测推向标准化",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2605.20425"
+          "title": "Karpathy 加入 Anthropic，Anthropic $30B 融资估值 $900B",
+          "source": "AI News",
+          "url": "https://jls42.org/en/news/ia-actualites-19-may-2026"
         }
       ]
     },
@@ -1016,6 +1017,126 @@ window.APP_DATA = {
       "label": "国内",
       "kind": "industry",
       "importance": 6
+    },
+    {
+      "id": "keyong-20260525-09",
+      "section": "keyong",
+      "title": "A2A 协议突破 150 家组织：互操作从标准进入生产",
+      "summary": "Linux Foundation 宣布 A2A 协议在首年内超过 150 家组织加入，正式在 Google Cloud、Microsoft Azure、AWS 三大平台落地，并出现首批企业生产环境部署。市场规模预估达 $7.92B（2026）。",
+      "insight": "→ Keyong 关联：这条消息和「A2A / 互操作」直接相关。A2A 进入生产意味着 task state、capability discovery 和 artifact 传递需要从设计走向真正可运维的实现；互操作不再是讨论话题，而是部署约束。",
+      "url": "https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year",
+      "source": "Linux Foundation",
+      "tags": [
+        "A2A",
+        "production",
+        "150-orgs"
+      ],
+      "label": "Keyong",
+      "kind": "keyong",
+      "importance": 10
+    },
+    {
+      "id": "industry-20260525-09",
+      "section": "industry",
+      "title": "Karpathy 加入 Anthropic：最高调 AI 人才流动指向 Agent 研究",
+      "summary": "OpenAI 联合创始人 Andrej Karpathy 加入 Anthropic，负责重建预训练研究团队。这是 2026 最重磅的 AI 人才流动，信号是：预训练能力仍然是 Agent 能力的天花板，Anthropic 正在为下一代模型-Agent 融合做长期投入。",
+      "insight": "→ 模型预训练 + Agent 工程的组合，会让 Anthropic 在 managed agents、long-horizon tasks 和 safety 上获得更强底层支撑。",
+      "url": "https://jls42.org/en/news/ia-actualites-19-may-2026",
+      "source": "AI News Roundup",
+      "tags": [
+        "Karpathy",
+        "Anthropic",
+        "pretraining"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 9
+    },
+    {
+      "id": "industry-20260525-10",
+      "section": "industry",
+      "title": "Anthropic $30B 融资 $900B 估值：Agent 赛道资本天花板再刷新",
+      "summary": "Bloomberg 报道 Anthropic 完成 $30B 融资，估值超 $900B，超过 OpenAI。资本加码反映市场对 Agent 基础设施（模型 + 运行时 + 治理）的长期押注。",
+      "insight": "→ 巨额融资的背后逻辑是：Agent 平台需要同时拥有模型研发、基础设施和企业交付能力，单纯模型 API 不够。",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-may-25-2026",
+      "source": "BuildFastWithAI",
+      "tags": [
+        "Anthropic",
+        "funding",
+        "$900B"
+      ],
+      "label": "行业",
+      "kind": "industry",
+      "importance": 8
+    },
+    {
+      "id": "china-20260525-07",
+      "section": "china",
+      "title": "中国模型 OpenRouter 用量突破 60%：开源+低价重塑全球推理市场",
+      "summary": "OpenRouter 平台统计显示，Kimi K2.6、DeepSeek V4、GLM-5.1、Qwen 3 等中国开源模型用量占比已超 60%，成为全球开发者在 Agent 工作流中最常调用的模型系列。",
+      "insight": "→ 模型选择正在从品牌转向成本和延迟驱动；Agent 架构设计需要假设模型可随时切换，而不是绑定单一供应商。",
+      "url": "https://openrouter.ai",
+      "source": "OpenRouter",
+      "tags": [
+        "DeepSeek",
+        "Kimi",
+        "Qwen",
+        "open-weight"
+      ],
+      "label": "国内",
+      "kind": "industry",
+      "importance": 8
+    },
+    {
+      "id": "china-20260525-08",
+      "section": "china",
+      "title": "DeepSeek 估值 ¥3000 亿 / Kimi 融资 $2B：中国 Agent 基础设施军备竞赛",
+      "summary": "上海观察网报道，月之暗面（Kimi）即将完成 $2B 新一轮融资，DeepSeek 估值达 ¥3000 亿。中国 AI 大模型赛道进入重资本投入阶段，目标从模型能力延伸到 Agent 平台和推理基础设施。",
+      "insight": "→ 国内大模型融资已从模型训练转向推理成本、Agent 平台和企业落地；协议和标准的竞争也会随之加剧。",
+      "url": "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1108531&sid=11",
+      "source": "上观新闻",
+      "tags": [
+        "DeepSeek",
+        "Kimi",
+        "funding"
+      ],
+      "label": "国内",
+      "kind": "industry",
+      "importance": 7
+    },
+    {
+      "id": "opensource-20260525-11",
+      "section": "opensource",
+      "title": "Signet AI：Agent 本地身份、记忆与密钥管理的开源方案",
+      "summary": "Signet-AI/signetai 提供 local-first 的 Agent identity、memory 和 secrets 管理，支持在不同模型和 harness 之间迁移 Agent 状态。163 stars，定位在 Agent 可移植性与隐私安全交叉点。",
+      "insight": "→ Agent 身份和密钥管理是生产化的必经之路；状态可移植性可以降低对单一平台的锁定。",
+      "url": "https://github.com/Signet-AI/signetai",
+      "source": "GitHub",
+      "tags": [
+        "identity",
+        "secrets",
+        "portable-state"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 7
+    },
+    {
+      "id": "opensource-20260525-12",
+      "section": "opensource",
+      "title": "agentic-sandbox：自托管 A2A 执行器 + KVM 隔离",
+      "summary": "jmagly/agentic-sandbox 是面向持久自主编码 Agent 的自托管运行时，用 KVM 或 rootless 容器隔离，内置 A2A 协议执行器、AgentCard 签名发现和 virtiofs 共享存储，无需托管控制面。",
+      "insight": "→ A2A 在自托管场景需要 VM 隔离、签名验证和资源配额；这类项目是互操作 + 安全的早期实验。",
+      "url": "https://github.com/jmagly/agentic-sandbox",
+      "source": "GitHub",
+      "tags": [
+        "A2A",
+        "KVM",
+        "self-hosted"
+      ],
+      "label": "开源",
+      "kind": "open",
+      "importance": 7
     }
   ]
 };
