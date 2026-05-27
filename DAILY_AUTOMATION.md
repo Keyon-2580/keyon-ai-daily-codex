@@ -60,9 +60,10 @@ node scripts/collect-news.mjs --out tmp/latest-candidates.json
 8. 完成后运行：
    node --check data.js
    node --check app.js
+   node scripts/snapshot.mjs   # 保存当天快照到 history/ 并清理 >7 天的旧文件
    python3 -m http.server 4321 --directory .  # 如需本地预览
 9. 若校验通过且 GitHub remote/发布分支已配置，提交并推送：
-   git add data.js
+   git add data.js history/ 
    git commit -m "Update AI frontier daily digest YYYY-MM-DD"
    git push origin main
    git push origin main:gh-pages

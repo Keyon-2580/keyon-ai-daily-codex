@@ -1,6 +1,6 @@
 (function () {
-  const data = window.APP_DATA;
-  const sectionOrder = data.categories.filter((category) => category.id !== "archive");
+  let data = window.APP_DATA;
+  let sectionOrder = data.categories.filter((category) => category.id !== "archive");
   const sectionsRoot = document.getElementById("sections");
   const searchInput = document.getElementById("global-search");
   const sidebarNav = document.getElementById("sidebar-nav");
@@ -12,9 +12,88 @@
   const pageSubtitle = document.getElementById("page-subtitle");
   const currentDate = document.getElementById("current-date");
   const scoreValue = document.getElementById("score-value");
+  const histLabel = document.getElementById("hist-label");
+  const histPrev = document.getElementById("hist-prev");
+  const histNext = document.getElementById("hist-next");
 
   let activeArchive = 0;
   let activeNav = "hot";
+
+  // --- History navigation state ---
+  let historyDates = [];  // available dates from manifest (newest first)
+  let historyIndex = -1;  // -1 = live/today, 0+ = index into historyDates
+  const todayDate = data.sourceDigestDate;
+
+  function loadManifest() {
+    return fetch("./history/manifest.json")
+      .then((res) => res.ok ? res.json() : { dates: [] })
+      .then((manifest) => { historyDates = manifest.dates || []; })
+      .catch(() => { historyDates = []; });
+  }
+
+  function loadSnapshot(date) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = `./history/${date}.js?t=${Date.now()}`;
+      script.onload = () => { resolve(); script.remove(); };
+      script.onerror = () => { reject(new Error(`Failed to load history/${date}.js`)); script.remove(); };
+      document.head.appendChild(script);
+    });
+  }
+
+  function reloadWithData(newData) {
+    data = newData;
+    sectionOrder = data.categories.filter((category) => category.id !== "archive");
+    activeArchive = 0;
+    renderAll();
+  }
+
+  function renderAll() {
+    renderEditorNote();
+    renderLens();
+    renderAllNavs();
+    renderArchive();
+    renderSections();
+    drawSignalMap();
+    updateHistoryUI();
+  }
+
+  function updateHistoryUI() {
+    if (historyIndex === -1) {
+      histLabel.textContent = "今天";
+      histLabel.classList.remove("hist-past");
+      histNext.disabled = true;
+    } else {
+      histLabel.textContent = historyDates[historyIndex];
+      histLabel.classList.add("hist-past");
+      histNext.disabled = (historyIndex === 0);
+    }
+    // Can go back if there are older dates
+    const canGoPrev = historyIndex < historyDates.length - 1;
+    histPrev.disabled = !canGoPrev;
+  }
+
+  function navigateHistory(direction) {
+    // direction: -1 = older, +1 = newer
+    const newIndex = historyIndex + (direction === -1 ? 1 : -1);
+    if (direction === 1 && newIndex < 0) {
+      // Back to live
+      historyIndex = -1;
+      reloadWithData(window.APP_DATA);
+      return;
+    }
+    if (newIndex < 0 || newIndex >= historyDates.length) return;
+    historyIndex = newIndex;
+    const targetDate = historyDates[historyIndex];
+    loadSnapshot(targetDate)
+      .then(() => { reloadWithData(window.APP_DATA); })
+      .catch(() => { histLabel.textContent = "加载失败"; });
+  }
+
+  function bindHistoryEvents() {
+    histPrev.addEventListener("click", () => navigateHistory(-1));
+    histNext.addEventListener("click", () => navigateHistory(1));
+  }
 
   function escapeHtml(value) {
     return String(value)
@@ -335,6 +414,8 @@
     renderSections();
     drawSignalMap();
     bindEvents();
+    bindHistoryEvents();
+    loadManifest().then(updateHistoryUI);
   }
 
   init();

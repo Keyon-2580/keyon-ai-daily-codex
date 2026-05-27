@@ -137,6 +137,54 @@ a {
   display: none;
 }
 
+.history-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 18px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--bg-soft);
+}
+
+.hist-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text-soft);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.hist-btn:hover:not(:disabled) {
+  background: #efeee8;
+  border-color: #cfdaf0;
+}
+
+.hist-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.hist-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  min-width: 90px;
+  text-align: center;
+}
+
+.hist-label.hist-past {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
 .page-shell {
   max-width: 1200px;
   margin: 0 auto;
