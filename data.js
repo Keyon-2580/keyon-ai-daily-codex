@@ -5,7 +5,8 @@ window.APP_DATA = {
   "editorNote": [
     "今天的主线是 <strong>「持久 Agent 记忆」从单会话 hack 走向架构级设计</strong>。<a href=\"http://arxiv.org/abs/2607.09493v1\" target=\"_blank\" rel=\"noopener noreferrer\">Shared Selective Persistent Memory</a> 提出四类可复用上下文（任务规格、数据 schema、工具配置、输出约束）+ zero-token refresh 机制，在企业场景达 96% 任务完成率、97× token 降本；<a href=\"http://arxiv.org/abs/2607.09175v1\" target=\"_blank\" rel=\"noopener noreferrer\">GRACE</a> 用图正则化让长周期 Agent 的 persistent instruction 可在分布偏移下安全演化，pass³ 从 0.091 提升到 0.673。两者共同指向一个结论——Agent 的「记忆」不是 prompt 里堆文本，而是需要结构化基底 + 选择性保留 + 可验证更新。",
     "<strong>Gemini 3.5 Pro 7/17 发布倒计时 + Claude Code 内置浏览器 + 编码 Agent 全面进入「IDE 融合」</strong>。Google DeepMind 把 <a href=\"https://www.techtimes.com/articles/319877/20260708/gemini-35-pro-targets-july-17-deepseeks-july-24-deadline-hits-developers-now.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Gemini 3.5 Pro</a> 锁定 7/17（与 WAIC 同日）；<a href=\"https://code.claude.com/docs/en/whats-new\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Code v2.1.202+</a> 新增 Desktop 内置浏览器与 /doctor 诊断，子 Agent 后台运行成默认行为；多节点编码 Agent <a href=\"https://github.com/Runfusion/Fusion\" target=\"_blank\" rel=\"noopener noreferrer\">Fusion（942 Stars）</a>把 Agent 工厂模式推向「24/7 并行交付」。",
-    "<strong>安全与可审计：从模型对齐下沉到 harness 层</strong>。<a href=\"http://arxiv.org/abs/2607.09195v1\" target=\"_blank\" rel=\"noopener noreferrer\">HEP（Hypothesis Evolution Protocol）</a>让 AI 科学家的假说-检验-信念演化过程显式可审计；<a href=\"http://arxiv.org/abs/2607.09653v1\" target=\"_blank\" rel=\"noopener noreferrer\">VEXAIoT</a> 用多 Agent 对 IoT 做自主渗透测试，95% 攻击成功率暴露当前 IoT 安全在 Agent 面前的脆弱性；Mosaic 把 ILP 约束引入多 Agent 规划，用确定性门消除冲突动作——harness 正从「辅助框架」变为「安全与正确性的最后一道门」。"
+    "<strong>安全与可审计：从模型对齐下沉到 harness 层</strong>。<a href=\"http://arxiv.org/abs/2607.09195v1\" target=\"_blank\" rel=\"noopener noreferrer\">HEP（Hypothesis Evolution Protocol）</a>让 AI 科学家的假说-检验-信念演化过程显式可审计；<a href=\"http://arxiv.org/abs/2607.09653v1\" target=\"_blank\" rel=\"noopener noreferrer\">VEXAIoT</a> 用多 Agent 对 IoT 做自主渗透测试，95% 攻击成功率暴露当前 IoT 安全在 Agent 面前的脆弱性；Mosaic 把 ILP 约束引入多 Agent 规划，用确定性门消除冲突动作——harness 正从「辅助框架」变为「安全与正确性的最后一道门」。",
+    "<strong>今日新增信号：编码 Agent 舰队、Agent 安全事故、模型价格战交汇</strong>。<a href=\"https://bun.com/blog/bun-in-rust\" target=\"_blank\" rel=\"noopener noreferrer\">Bun v1.4 canary</a> 用约 64 个 Claude 实例在 11 天内完成 Zig→Rust 全量重写（6,502 次提交、对抗式 review），是迄今公开规模最大的 Agent 舰队工程；<a href=\"https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/\" target=\"_blank\" rel=\"noopener noreferrer\">GitLost</a> 通过公开 issue 的间接 prompt injection 让 GitHub 代理工作流把私有仓库内容贴到公开评论，佐证「Agent 读到的用户内容即指令通道」；<a href=\"https://x.ai/news/grok-4-5\" target=\"_blank\" rel=\"noopener noreferrer\">Grok 4.5</a> 与 <a href=\"https://openai.com/index/gpt-5-6/\" target=\"_blank\" rel=\"noopener noreferrer\">GPT-5.6 Luna</a> 均把输出价压到 6 美元/百万 tokens，倒逼 Anthropic 计费与 Agent 架构团队重新算账。"
   ],
   "lens": [
     { "label": "Agentic 开发", "value": 88 },
@@ -28,8 +29,8 @@ window.APP_DATA = {
     {
       "date": "07.13",
       "fullDate": "2026-07-13",
-      "theme": "持久记忆架构化 + Gemini 3.5 Pro 倒计时 + Claude Code 内置浏览器 + Harness 可审计",
-      "take": "Shared Selective Persistent Memory 把 Agent 记忆从堆 prompt 变为四维选择性保留+zero-token refresh（96%完成率/97×降本）；GRACE 用图正则化让 persistent instruction 在分布偏移下安全演化（pass³ 0.091→0.673）；Gemini 3.5 Pro 锁定7/17、Claude Code v2.1.202+新增Desktop内置浏览器与/doctor诊断；HEP让AI科学家的假说演化可审计；Fusion 942 Stars做多节点Agent工厂；VEXAIoT多Agent对IoT自主渗透测试95%成功率。",
+      "theme": "持久记忆架构化 + 编码 Agent 舰队 + Agent 安全事故 + 模型价格战 + Harness 可审计",
+      "take": "Shared Selective Persistent Memory 把 Agent 记忆从堆 prompt 变为四维选择性保留+zero-token refresh（96%完成率/97×降本）；GRACE 用图正则化让 persistent instruction 在分布偏移下安全演化（pass³ 0.091→0.673）；Gemini 3.5 Pro 锁定7/17、Claude Code v2.1.202+新增Desktop内置浏览器与/doctor诊断；HEP让AI科学家的假说演化可审计；Fusion 942 Stars做多节点Agent工厂；VEXAIoT多Agent对IoT自主渗透测试95%成功率；Bun v1.4 canary用64 Claude实例11天完成Zig→Rust全量重写；GitLost用公开issue的prompt injection让GitHub代理工作流泄露私有仓；Grok 4.5/GPT-5.6 Luna/Fable-5 输出价收敛至~$6/M tokens。",
       "items": [
         {
           "title": "Shared Selective Persistent Memory：四维选择性记忆 + zero-token refresh",
@@ -45,6 +46,21 @@ window.APP_DATA = {
           "title": "Claude Code v2.1.202+：Desktop 内置浏览器 + /doctor 诊断 + 子Agent后台默认",
           "source": "Anthropic",
           "url": "https://code.claude.com/docs/en/whats-new"
+        },
+        {
+          "title": "Bun v1.4 canary：64 Claude 实例 11 天完成 Zig→Rust 全量重写（6502 提交）",
+          "source": "Bun",
+          "url": "https://bun.com/blog/bun-in-rust"
+        },
+        {
+          "title": "GitLost：公开 issue 的间接 prompt injection 让 GitHub 代理工作流泄露私仓",
+          "source": "Noma Security",
+          "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/"
+        },
+        {
+          "title": "Grok 4.5 / GPT-5.6 Luna / Claude Fable-5：输出价收敛至 ~$6/M tokens",
+          "source": "xAI / OpenAI / Anthropic",
+          "url": "https://x.ai/news/grok-4-5"
         }
       ]
     },
@@ -249,6 +265,45 @@ window.APP_DATA = {
       "url": "http://arxiv.org/abs/2607.09603v1",
       "source": "arXiv",
       "tags": ["Mosaic", "multi-agent", "ILP", "embodied"],
+      "label": "热榜",
+      "kind": "hot",
+      "importance": 8
+    },
+    {
+      "id": "hot-20260713-06",
+      "section": "hot",
+      "title": "Bun v1.4 canary：64 个 Claude 实例 11 天完成 Zig→Rust 全量重写",
+      "summary": "Bun 团队公开披露：用约 64 个 Claude Fable-5 实例、11 天、6,502 次提交完成从 Zig 到 Rust 的运行时全量重写，Agent 之间采用对抗式 review 协同。v1.4 canary 是首个 Rust 构建版本，修复 128 个 bug，运行速度快 2–5%，产物体积小约 20%。团队称迁移动因是 Zig 中 GC 值与手动内存混用导致的反复 use-after-free。",
+      "insight": "这是目前公开规模最大的编码 Agent 舰队工程实录：舰队规模、任务时长与产出量级都在放大既有想象。真正被验证的不是「Agent 会写代码」，而是「Agent 舰队能围绕一个软件工程目标持续、并行、可复核地推进 6500+ 次改动」——这直接把 harness/编排/评审做成了一等工程学科。",
+      "url": "https://bun.com/blog/bun-in-rust",
+      "source": "Bun",
+      "tags": ["Bun", "Claude", "agent-fleet", "rewrite"],
+      "label": "热榜",
+      "kind": "hot",
+      "importance": 9
+    },
+    {
+      "id": "hot-20260713-07",
+      "section": "hot",
+      "title": "GitLost：公开 issue 的间接 prompt injection 让 GitHub 代理工作流泄露私仓",
+      "summary": "Noma Security 披露 GitLost 漏洞：攻击者在公开 issue body 中埋藏隐蔽指令，当 GitHub 上的代理工作流读取该 issue 时会执行这些指令，将私有仓库内容作为普通评论回帖到公开 issue——整个过程不需要额外认证。该问题已在披露前负责任地上报 GitHub。",
+      "insight": "GitLost 用具体事故证明了「Agent 读到的任何用户内容都是潜在指令通道」这条安全原则。对于任何把外部内容送入 Agent 的工作流（issue、PR、邮件、页面），最小权限、写操作白名单与出站内容审计都必须默认开启，否则 prompt injection 就是免认证 RCE。",
+      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+      "source": "Noma Security",
+      "tags": ["prompt-injection", "GitHub", "agent-security"],
+      "label": "热榜",
+      "kind": "hot",
+      "importance": 9
+    },
+    {
+      "id": "hot-20260713-08",
+      "section": "hot",
+      "title": "Grok 4.5 / GPT-5.6 Luna / Claude Fable-5：agentic 模型输出价收敛至 ~$6/M tokens",
+      "summary": "xAI 上线 Grok 4.5，定价 $2 输入 / $6 输出（每百万 tokens），主打编码/agentic 场景，并把 Cursor 会话数据用于训练；OpenAI 同期 GPT-5.6 Luna 价格档同为 $1/$6；Anthropic 新发的 Claude Fable-5/Mythos-5 通用档 $10/$50，但较此前预览版降幅超 50%。",
+      "insight": "$6/M 输出 tokens 正在成为 agentic 模型的价格基线——这一价位对 Agent 舰队与长任务尤其关键，因为 Agent 场景的 token 消耗远超对话场景。团队应把「按 API 计价、按 Agent 归因、按任务预算」作为架构第一类需求，而不是财务事后核算。",
+      "url": "https://x.ai/news/grok-4-5",
+      "source": "xAI",
+      "tags": ["Grok-4.5", "GPT-5.6", "pricing"],
       "label": "热榜",
       "kind": "hot",
       "importance": 8
